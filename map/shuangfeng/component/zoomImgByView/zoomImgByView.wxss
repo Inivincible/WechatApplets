@@ -1,0 +1,10 @@
+/* component/zoomImgByView/zoomImgByView.wxss */
+.image{
+    position: absolute;
+    top:20%;
+    left: 50%;
+    bottom: 80%;
+    right: 50%;
+    width:60rpx;
+    height: 60rpx;
+}

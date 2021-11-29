@@ -1,0 +1,19 @@
+wx-App({
+    data:{
+ 
+        url:'http://localhost:8080/smh'
+ 
+    },
+
+
+
+    onLaunch: function() {
+        
+    },
+    onShow: function() {
+        
+    },
+    onHide: function() {
+        
+    }  
+})

@@ -1,0 +1,17 @@
+/* pages/login/login.wxss */
+.icon{
+    margin: 0;
+    padding: 0;
+}
+.ico{
+    float: right;
+    height: 48rpx;
+}
+.weui-input{
+    float: left;
+    width: 350rpx;
+    height: 48rpx;
+}
+.weui-cell__bd{
+    height: 48rpx;
+}

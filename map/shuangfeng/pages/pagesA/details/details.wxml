@@ -1,0 +1,17 @@
+<!--pages/pagesA/details/details.wxml-->
+<view>
+    <view class="card" >
+        <view bindtap="onItemClick">
+            <image class="image" mode="aspectFill" src="{{url}}{{details.img2}}"/>
+        </view>
+    </view>
+    <view class="notice" style="position: relative; width: 750rpx;">
+        <text style="font-weight: bold; color: black;">{{details.name}}</text>
+    </view>
+    <view class="notice" style="position: relative; width: 750rpx;">
+        <text>电话:{{details.tel}}</text>
+    </view>
+    <view style="position: relative;width: 750rpx;" class="notice_text">
+    <text style="width: 90%;">{{details.details}}</text>
+    </view>
+</view>

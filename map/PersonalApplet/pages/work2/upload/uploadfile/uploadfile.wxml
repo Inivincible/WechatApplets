@@ -1,0 +1,7 @@
+<!--pages/work2/upload/uploadfile/uploadfile.wxml-->
+<view>
+    <button bindtap="uploadpic">上传图片</button>
+</view>
+<view>
+    <button bindtap="uploadfile">上传文件</button>
+</view>

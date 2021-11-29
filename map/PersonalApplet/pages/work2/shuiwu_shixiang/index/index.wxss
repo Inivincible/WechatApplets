@@ -1,0 +1,20 @@
+/* pages/work2/shuiwu_shixiang/index/index.wxss */
+.weui-form-preview__value {
+    color: inherit;
+}
+.weui-form-preview__value {} .weui-cell {
+    align-items: baseline;
+}
+.weui-cell_access.weui-cell_active .weui-cell__ft:after {
+    display: none;
+}
+.weui-cell_access .weui-cell__ft {
+    padding-right: 0;
+}
+.weui-label {
+    color: #999;
+}
+.weui-cell_select-after.weui-cell_access .weui-cell__bd {
+    text-align: right;
+    padding-right: 36px;
+}

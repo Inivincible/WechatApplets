@@ -1,0 +1,42 @@
+<!--pages/work2/shebao_jiaofei/list/list.wxml-->
+
+<view class="page" style="top:0em;bottom: 0;padding:0;">
+    <view class="weui-tab">
+        <view class="weui-navbar">
+            <view class="section">
+                <picker mode="date" fields="month" value="{{date}}" start="1978-01" end="2030-1"
+                    bindchange="bindDateChange">
+                    <view class="picker">
+                        日期: {{date}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="weui-tab__panel">
+            <button bindtap="buttonClick">调整参数</button>
+            <view class="weui-form-preview" wx:for="{{datas}}">
+                <!-- <view class="weui_title">
+                    <text class="" selectable="false" space="false" decode="false">
+                        7月份保险缴费
+                    </text>                    
+                </view> -->
+                <view class="weui-cells">
+                    <navigator url="../detail/detail?id={{ item.iD }}" hover-class="navigator-hover" open-type="navigate">
+                        <view class="weui-cell weui-cell_active weui-cell_access">
+                            <view class="weui-cell__bd ">
+                                <p>{{ item.name }}</p>
+                            </view>
+                            <view class="weui-cell__ft" style="font-size: 0;">
+                                <a style="vertical-align: middle; font-size: 17px;">
+                                    {{ item.state }}
+                                </a>
+                            </view>
+                        </view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+
+    </view>
+
+</view>

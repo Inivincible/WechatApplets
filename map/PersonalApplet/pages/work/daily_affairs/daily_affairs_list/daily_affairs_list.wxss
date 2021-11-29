@@ -1,0 +1,60 @@
+/* pages/daily_affairs_list/daily_affairs_list.wxss */
+a.weui-media-box{
+    margin-bottom: 36rpx;
+}
+.weui-media-box__info{
+    margin-top: 8rpx;
+}
+.weui-media-box_appmsg .weui-media-box__hd{
+    width: 200rpx;
+}
+.weui-media-box__info__meta{
+    padding-bottom: 8rpx;
+}
+.color0{
+    background-color: #f99507;
+}
+.color1{
+    background-color:tomato;
+}
+.color2{
+    background-color:yellow;
+}
+.color3{
+    background-color:lightgreen;
+}
+.color4{
+    background-color: #05fbf7;
+}
+.weui-content{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:1;
+
+}
+/* 消除页面上下滚动条 */
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+.dateStyle{
+    padding-left: 70rpx;
+}
+.Commitments{
+    padding-right: 50rpx;
+
+}
+/*.weui-textarea{*/
+/*    display: block;*/
+/*    border: 0;*/
+/*    resize: none;*/
+/*    background: transparent;*/
+/*    width: 100%;*/
+/*    color: inherit;*/
+/*    font-size: 1em;*/
+/*    line-height: inherit;*/
+/*    outline: 0;*/
+/*}*/

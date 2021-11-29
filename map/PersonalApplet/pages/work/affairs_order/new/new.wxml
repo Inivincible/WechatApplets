@@ -1,0 +1,70 @@
+
+<view class="page" style="padding: 0;bottom: 0;">
+    <view class="page__bd" style="height: 100%;">
+        <view class="weui-tab">
+            <view class="weui-tab__panel">
+                <view class="weui-cells weui-cells_form">
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">发布任务主题</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input id="Theme" class="weui-input" placeholder="填写任务名称"  bindinput="handleInput"/>
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_active" >
+                        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                            <view class="picker">
+                                事务类型<span class="dateStyle">{{array[index]}}</span>
+                            </view>
+                        </picker>
+                    </view>
+                    <view class="weui-cell weui-cell_active" >
+                        <picker mode="date" fields="day" value="{{date}}" start="1978-01-01" end="2999-01-01" bindchange="bindDateChange">
+                            <view class="picker">
+                                任务时间<span class="dateStyle">{{date}}</span>
+                            </view>
+                        </picker>
+                    </view>
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">任务地点</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input id="Place" class="weui-input" placeholder="填写任务地点" bindinput="handleInput"/>
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">发布人</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input id="Issuer"  class="weui-input" placeholder="填写发布人" bindinput="handleInput"/>
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">联系电话</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input id="Phone" class="weui-input" placeholder="联系电话" type="number" pattern="[0-9]*" bindinput="handleInput"/>
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">任务描述</label>
+                            <view class="weui-cell__bd">
+                                <textarea style="width: 700rpx;" class="weui-textarea" id="Commitments" placeholder="请描述信息" rows="4" bindinput="handleInput"></textarea>
+                                <view class="weui-textarea-counter"><span>{{Commitments.length}}</span>/140</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="weui-form__opr-area" style="margin: 20px 0;">
+                    <button bindtap="ReleaseTask" class="weui-btn weui-btn_primary" >发布</button>
+                </view>
+            </view>
+
+        </view>
+    </view>
+</view>

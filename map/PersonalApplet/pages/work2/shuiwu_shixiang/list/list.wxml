@@ -1,0 +1,96 @@
+<view class="page" style="top:0em;bottom: 0em;">
+    <view class="section">  
+        <picker mode="date" fields="month" value="{{date}}" start="1978-01" end="2030-1" bindchange="bindDateChange">  
+          <view class="picker">  
+            日期: {{ date }}  
+          </view>  
+        </picker>  
+      </view>  
+    <view class="weui-flex">
+        <view class="weui-flex__item ">
+            <view class="weui-grids box">
+                <a class="weui-grid" style="background-color: lightgreen;">
+                    <navigator url="../grsdssb/index?date={{ date }}">
+                        <view class="" hover-class="none" hover-stop-propagation="false">
+                            <p class="weui-grid__label">个人所得税</p>
+                            <p class="weui-grid__label">申报</p>
+                            <p class="weui-grid__label">已申报</p>
+                        </view>
+                    </navigator>
+                </a>
+                <a href="javascript:" class="weui-grid"  style="background-color: tomato;">
+                    <navigator url="../grsdsjn/index">
+                        <view class="" hover-class="none" hover-stop-propagation="false">
+                            <p class="weui-grid__label">个人所得税</p>
+                            <p class="weui-grid__label">缴纳</p>
+                            <p class="weui-grid__label">未缴纳</p>
+                            </view>
+                    </navigator>
+                </a>
+                <a href="javascript:" class="weui-grid" style="background-color: lightgreen;">
+                    <navigator url="../zzssb/index">
+                        <view class="" hover-class="none" hover-stop-propagation="false">
+                            <p class="weui-grid__label">增值税</p>
+                            <p class="weui-grid__label">申报</p>
+                            <p class="weui-grid__label">已申报</p>
+                            </view>
+                    </navigator>
+                </a>
+                <a class="weui-grid" style="background-color: lightgreen;">
+                    <navigator url="../zzsjn/index" >
+                        <view class="" hover-class="none" hover-stop-propagation="false">
+                            <p class="weui-grid__label">增值税</p>
+                            <p class="weui-grid__label">缴纳</p>
+                            <p class="weui-grid__label">已缴纳</p>
+                            </view>
+                    </navigator>
+                </a>
+                <a class="weui-grid" style="background-color:tomato;">
+                    <navigator url="../qysdssb/index">
+                        <view class="" hover-class="none" hover-stop-propagation="false">
+                            <p class="weui-grid__label">企业所得税</p>
+                            <p class="weui-grid__label">申报</p>
+                            <p class="weui-grid__label">未申报</p>
+                            </view>
+                    </navigator>
+                </a>
+                <a class="weui-grid"  style="background-color:tomato;">
+                    <navigator url="../qysdsjn/index">
+                        <view class="" hover-class="none" hover-stop-propagation="false">
+                            <p class="weui-grid__label">企业所得税</p>
+                            <p class="weui-grid__label">缴纳</p>
+                            <p class="weui-grid__label">未缴纳</p>
+                            </view>
+                    </navigator>
+                </a>
+                <a class="weui-grid">
+                    <navigator url="../xzsynsjspz/index">
+                        <view class="" hover-class="none" hover-stop-propagation="false">
+                            <p class="weui-grid__label">下载上月</p>
+                            <p class="weui-grid__label">纳税缴税凭证</p>
+                            <p class="weui-grid__label">下载凭证</p>
+                            </view>
+                    </navigator>
+                </a>
+                <a class="weui-grid" style="background-color:#00ffff;">
+                    <navigator url="../dypj/index">
+                        <view class="" hover-class="none" hover-stop-propagation="false">
+                            <p class="weui-grid__label">当月票据</p>
+                            <p class="weui-grid__label">上传</p>
+                            <p class="weui-grid__label">上传票据</p>
+                            </view>
+                    </navigator>
+                </a>
+                <a class="weui-grid">
+                    <navigator url="../xzsynsjspz/index">
+                        <view class="" hover-class="none" hover-stop-propagation="false">
+                            <p class="weui-grid__label">查看历史</p>
+                            <p class="weui-grid__label">票据</p>
+                            <p class="weui-grid__label">查看票据</p>
+                            </view>
+                    </navigator>
+                </a>
+            </view>
+        </view>
+    </view>
+    </view>

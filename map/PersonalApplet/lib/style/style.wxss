@@ -1,0 +1,335 @@
+		.page {
+			top: 0em;
+			bottom: 0em;
+			padding: 0;
+		}
+		.header {
+			background: #fff;
+		}
+		.header p {
+			padding: 20px;
+		}
+		.weui-tabbar {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: #fff;
+			box-shadow: 0 0 20px 0 rgba(19, 36, 85, .1);
+		}
+		.weui-badge {
+			display: none;
+		}
+		.block .weui-badge {
+			display: block;
+		}
+		.weui-tabbar__item .weui-tabbar__label {
+			font-size: 14px;
+			color: #5d6b7e;
+		}
+		.weui-tabbar__item i {
+			font-size: 24px;
+			color: #a8afb7;
+		}
+		.weui-bar__item_on i {
+			color: #ed7276;
+		}
+		.weui-tabbar__item.weui-bar__item_on .weui-tabbar__label {
+			color: #ed7276;
+		}
+		.swiper-slide img {
+			width: 100%;
+			height: 10.8em;
+			display: block;
+		}
+		.weui-flex__item {
+			padding: 1.5% 3%;
+			overflow: hidden;
+		}
+		.weui-flex__item .box {} .weui-flex__item .box a {
+			background: #fff;
+			width: 30%;
+			margin: 1.66%;
+			border-radius: 4px;
+			/* padding: 1em; */
+			padding-bottom: .8em;
+		}
+		/*.weui-grid::before {
+		  content: '';
+		  padding-top: 100%;
+		  float: left;
+		}
+		.weui-grid::after {
+		  content: '';
+		  display: block;
+		  clear: both;
+		}
+		.weui-grid{
+
+		}*/
+
+		.weui-grids:after,
+		.weui-grids:before {
+			border: 0;
+		}
+		.weui-grid__icon {
+			width: auto;
+			height: auto;
+			text-align: center;
+			line-height: 2.5em;
+			margin: .5em 0;
+		}
+		.weui-grid__icon i {
+			font-size: 2.4em;
+			display: block;
+		}
+		.weui-grid__icon+.weui-grid__label {
+			margin: 0;
+			font-size: 1em;
+		}
+		.weui-media-box {
+			background: #FFFFFF;
+			border-radius: 4px;
+		}
+		.weui-grids {
+			margin: -0.75% -1.66%;
+		}
+		.weui-grid__icon .icon.pur {
+			background-image: linear-gradient(180deg, #d1c2ff, #9673ff);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.weui-grid__icon .icon.yellow {
+			background-image: linear-gradient(180deg, #ffd699, #ff9900);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.weui-grid__icon .icon.green {
+			background-image: linear-gradient(180deg, #94e7af, #19cb54);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.weui-grid__icon .icon.blue {
+			background-image: linear-gradient(180deg, #9ec4f4, #2c7ee8);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.weui-grid__icon .icon.tangerine {
+			background-image: linear-gradient(180deg, #ffc499, #ff6c00);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.weui-grid__icon .icon.cyan {
+			background-image: linear-gradient(180deg, #cbd4ff, #4561eb);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.weui-grid__icon .icon.red {
+			background-image: linear-gradient(180deg, #ffb2b5, #f0585d);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.icon.pur {
+			background-image: linear-gradient(180deg, #d1c2ff, #9673ff);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.icon.yellow {
+			background-image: linear-gradient(180deg, #ffd699, #ff9900);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.icon.green {
+			background-image: linear-gradient(180deg, #94e7af, #19cb54);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.icon.blue {
+			background-image: linear-gradient(180deg, #9ec4f4, #2c7ee8);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.icon.tangerine {
+			background-image: linear-gradient(180deg, #ffc499, #ff6c00);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.icon.cyan {
+			background-image: linear-gradient(180deg, #cbd4ff, #4561eb);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.icon.red {
+			background-image: linear-gradient(180deg, #ffb2b5, #f0585d);
+			-webkit-background-clip: text;
+			color: transparent;
+		}
+		.weui-grid__label {
+			color: #5d6b7e;
+			font-size: 1.6em;
+		}
+		.weui-media-box__desc {
+			color: #98a5ba;
+		}
+		.weui-media-box__title {
+			color: #5d6b7e;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.weui-flex__item .box.btn_box  table a{
+			padding: 0;
+			color: #5d6b7e;
+			display: block;
+			border-left:1px solid #e8e8e8 ;
+			margin: 0;
+			width: 100%;
+			background: none;
+		}
+	.btn_box table{
+		padding: 1em 0;
+		background: #fff;
+		border-radius:4px ;
+		text-align: center;
+	}
+.weui-cells__group_form .weui-vcode-btn{
+	color: #ed7276;
+	border: 2px solid #ed7276;
+	background: #fff;
+}
+.form_list{
+	padding: 4px 0;
+}
+.weui-form-preview__label{
+	min-width: auto;
+}
+.weui-cells{
+	margin-top: 0;
+	margin-bottom: 14px;
+}
+.weui-form-preview__hd:after{
+	left: 0;
+}
+.weui-form-preview{
+	border-radius:8px ;
+}
+.weui-form-preview__btn{
+	color: #888;
+}
+.weui-form-preview__btn_primary{
+	color: #ed7276;
+}
+.weui-media-box__desc{
+	color: rgba(0,0,0,0.3)
+}
+.weui-cell_link{
+	color: #ed7276;
+}
+.weui-btn{
+	width: 100%;
+    background: #fff;
+    color: #ed7276;
+    border: 1px solid #ed7276;
+        font-weight: normal;
+}
+.weui-btn_primary {
+	width: 100%;
+	background: #ed7276;
+	color: #FFFFFF;
+}
+.weui-form__opr-area{
+	padding: 0 30px;
+}
+.weui-form__control-area{
+	display: block;
+	flex: .1;
+}
+.weui-form__opr-area{
+	margin: 0;
+}
+.icon_box {
+	text-align: center;
+}
+.icon_box p{
+	font-size: .8em;
+	color: #888;
+}
+.icon_box .icon-weixin_huaban{
+	font-size: 2.4em;
+	color: #06AE56;
+}
+.weui-media-box_appmsg .weui-media-box__hd{
+	width: 80px;
+}
+.header p{
+	background: #ed7276;
+	color: #FFFFFF
+}
+.header .icon{
+	margin-right: 10px;
+	font-size: 1em;
+	color: #fff;
+}
+.weui-form-preview__bd{
+			padding: 4px 14px;
+		}
+		.weui-cells__group_form .weui-cells__title{
+		font-size: 1em;
+	    color: #333333;
+	    padding: 14px;
+	    margin: 0;
+	    border-top: 1px solid rgba(0,0,0,0.05);
+	}
+	.weui-cells__group_form .weui-cell{
+		padding: 14px;
+		font-family: "微软雅黑";
+	}
+	.weui-navbar{
+	 border-radius: 4px;
+    margin: 14px;
+    height: 40px;
+    overflow: hidden;
+    line-height: 40px;
+	}
+	.weui-navbar__item.weui-bar__item_on{
+		    background: #ed7276;
+    color: #fff;
+	}
+	.weui-navbar .weui-navbar__item{
+	padding: 0;
+	line-height: 40px;
+}
+.green{
+	color: #06AE56;
+}
+.weui_title{
+	padding: 14px;
+	background: #f3f4f9;
+}
+		.notice_icon {
+			display: block;
+			width: 3.6em;
+			height: 3.6em;
+			border-radius: 50%;
+			background: #ededed;
+		}
+		.notice_icon .icon {
+			font-size: 32px;
+			color: #fff;
+		}
+		.orange_bg {
+			background-image: linear-gradient(#fdb65e, #ff8d69);
+		}
+		.red_bg {
+			background-image: linear-gradient(#ffbec0, #ed7276);
+		}
+		.blue_bg {
+			background-image: linear-gradient(#8db8ff, #34a5ff);
+		}
+
+		.notice_img_box {
+			height: 4.8em;
+			background: #ededed;
+			margin-bottom: 1em;
+			border-radius: 0.6em;
+		}

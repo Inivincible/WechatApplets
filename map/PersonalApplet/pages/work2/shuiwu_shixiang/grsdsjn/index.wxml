@@ -1,0 +1,10 @@
+
+<view class="page" style="top:0em;bottom: 0;padding:0;">
+    <view class="weui-cells weui-cells_form">
+    
+        
+    </view>
+    <view class="weui-form__opr-area" style="margin: 20px 0;">
+        <UploadPic></UploadPic>
+    </view>
+  </view>

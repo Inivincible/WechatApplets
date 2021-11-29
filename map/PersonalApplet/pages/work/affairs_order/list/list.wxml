@@ -1,0 +1,76 @@
+<!--pages/work/affairs_order/list/list.wxml-->
+<view class="page" style="padding: 14px;bottom: 0;">
+    <view class="weui-tab">
+        <view class="weui-tab__panel">
+            <view class="weui-panel__bd" bindtap="detail" wx:for="{{Transaction.Daily}}" data-song="{{item}}" id="Daily">
+                <a class="weui-media-box weui-media-box_appmsg">
+                    <view class="weui-media-box__bd">
+                        <view class="weui-media-box__title">
+                            <view open-type="navigate">
+                                {{item.theme}}
+                            </view>
+                        </view>
+                        <view class="weui-media-box__info">
+                            <text style="color: green;">单位内部\n</text>
+                            <text>地址：{{item.place}}\n</text>
+                            <text>时间：{{item.time}}\n</text>
+                            <text>联系电话:{{item.phone}}</text>
+                        </view>
+                    </view>
+                </a>
+            </view>
+            <view class="weui-panel__bd" bindtap="detail" wx:for="{{Transaction.Personal}}" data-song="{{item}}" id="Personal">
+                <a class="weui-media-box weui-media-box_appmsg">
+                    <view class="weui-media-box__bd">
+                        <view class="weui-media-box__title">
+                            <view open-type="navigate">
+                                {{item.theme}}
+                            </view>
+                        </view>
+                        <view class="weui-media-box__info">
+                            <text style="color: red;">单位外部\n</text>
+                            <text>地址：{{item.place}}\n</text>
+                            <text>时间：{{item.time}}\n</text>
+                            <text>联系电话:{{item.phone}}</text>
+                        </view>
+                    </view>
+                </a>
+            </view>
+            <view class="weui-panel__bd" bindtap="detail" wx:for="{{Transaction.Temporary}}" data-song="{{item}}" id="Temporary">
+                <a class="weui-media-box weui-media-box_appmsg">
+                    <view class="weui-media-box__bd">
+                        <view class="weui-media-box__title">
+                            <view open-type="navigate">
+                                {{item.theme}}
+                            </view>
+                        </view>
+                        <view class="weui-media-box__info">
+                            <text style="color: green;">单位内部\n</text>
+                            <text>地址：{{item.place}}\n</text>
+                            <text>时间：{{item.time}}\n</text>
+                            <text>联系电话:{{item.phone}}</text>
+                        </view>
+                    </view>
+                </a>
+            </view>
+            <view class="weui-panel__bd" bindtap="detail" wx:for="{{Transaction.Volunteers}}" data-song="{{item}}" id="Volunteers">
+                <a class="weui-media-box weui-media-box_appmsg">
+                    <view class="weui-media-box__bd">
+                        <view class="weui-media-box__title">
+                            <view open-type="navigate">
+                                {{item.theme}}
+                            </view>
+                        </view>
+                        <view class="weui-media-box__info">
+                            <text style="color: red;">单位外部\n</text>
+                            <text>地址：{{item.place}}\n</text>
+                            <text>时间：{{item.time}}\n</text>
+                            <text>联系电话:{{item.phone}}</text>
+                        </view>
+                    </view>
+                </a>
+            </view>
+    </view>
+
+</view>
+</view>

@@ -1,0 +1,42 @@
+<!--pages/main/new_communication/new_communication.wxml-->
+<view class="page" style="padding: 0;bottom: 0em;">
+    <view class="weui-tab">
+        <!--横向滚动条-->
+        <view class="weui-navbar">
+            <scroll-view class="scroll-header" scroll-x="true">
+                <view class="weui-navbar__item {{Type === '全部'?'weui-bar__item_on':''}}" data-value="全部" bindtap="handleInput">
+                    全部
+                </view>
+                <view class="weui-navbar__item {{Type === item.type ?'weui-bar__item_on':''}}" wx:for="{{nav}}" data-value="{{item.type}}" bindtap="handleInput">
+                   <a href="#">{{item.type}}</a>
+                </view>
+            </scroll-view>
+        </view>
+
+        <scroll-view class="weui-tab__panel"
+                     scroll-y
+                     refresher-enabled
+                     bindrefresherrefresh="handleRefresher"
+                     refresher-background="#f7f7f7"
+                     refresher-default-style="black"
+                     refresher-triggered="{{isTriggered}}">
+                     
+            <view class="weui-panel__bd" bindtap="detail" wx:for="{{commodity}}" data-song="{{item}}">
+                <a class="weui-media-box weui-media-box_appmsg">
+                    <view  open-type="navigate">
+                    <view class="weui-media-box__hd">
+                        <image class="weui-media-box__thumb" src="{{url}}{{item.pic}}" />
+                    </view>
+                    <view class="weui-media-box__bd" >
+                            <text class="weui-media-box__title">{{item.tName}}</text>
+                            <p wx:if="{{item.money!=0}}"><span>¥</span><span>{{item.money}}</span></p>
+                            <p wx:if="{{item.money==0}}"><span>免费</span></p>
+                        </view>
+                    </view>
+                </a>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+
+<!--url="../../work/new_communication/detail/detail"-->

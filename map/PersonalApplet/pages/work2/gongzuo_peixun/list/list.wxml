@@ -1,0 +1,44 @@
+<!--pages/work2/gongzuo_peixun/list/list.wxml-->
+
+<view class="page" style="bottom: 0;">
+    <view class="weui-tab">
+        <view class="weui-tab__panel" style="padding: 14px">
+            <view class="weui-panel__bd">
+                <a href="javascript:" class="weui-media-box weui-media-box_appmsg" style="background-color: tomato;">
+                    <view class="weui-media-box__bd">
+                        <navigator url="../detail/detail"
+                                open-type="navigate">
+                        <view class="weui-media-box__title">
+                            
+                                技能xxxxx
+                            
+                        </view>
+                        <view class="weui-media-box__info">
+
+                        </view>
+                    </navigator>
+                    </view>
+                </a>
+                <a href="javascript:" class="weui-media-box weui-media-box_appmsg" style="background-color:lightgreen;">
+                    <view class="weui-media-box__bd">
+                        <view class="weui-media-box__title">
+                            <navigator url=""
+                                open-type="navigate">
+                                技能222222222
+                            </navigator>
+                        </view>
+                        <view class="weui-media-box__info">
+                        </view>
+                    </view>
+                </a>
+            </view>
+        </view>
+        <navigator url="../new/new" hover-class="navigator-hover" open-type="navigate">
+            <view class="weui-form-preview__ft">
+                    <a class="weui-form-preview__btn weui-form-preview__btn_primary" href="javascript:" style="padding: 20px;">
+                        <button>新增</button>
+                    </a>
+                </view>
+            </navigator>
+    </view>
+</view>

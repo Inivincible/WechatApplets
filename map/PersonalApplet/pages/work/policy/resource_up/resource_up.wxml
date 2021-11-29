@@ -1,0 +1,61 @@
+<!--pages/work/policy/resource_up/resource_up.wxml-->
+<view class="page" style="padding: 0;bottom: 0;position: flexs;">
+    <view class="weui-cells weui-cells_form">
+        <view>
+            <view class="weui-cell weui-cell_active">
+                <view class="weui-cell__hd"><label class="weui-label">政策：</label></view>
+                <view class="weui-cell__bd">
+                    <input id="policyName" class="weui-input" readonly="readonly" value="{{policyDetail.policyName}}"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_active">
+                <view class="weui-cell__hd"><label class="weui-label">公司名：</label></view>
+                <view class="weui-cell__bd">
+                    <input id="Company" class="weui-input" placeholder="请输入公司名称"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_active">
+                <view class="weui-cell__hd"><label class="weui-label">申请人：</label></view>
+                <view class="weui-cell__bd">
+                    <input id="Name" class="weui-input" placeholder="请输入申请人"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_active">
+                <view class="weui-cell__hd"><label class="weui-label">联系方式：</label></view>
+                <view class="weui-cell__bd">
+                    <input id="js_input" class="weui-input" placeholder="请输入联系方式"/>
+                </view>
+            </view>
+            <view class="weui-cells__group weui-cells__group_form">
+                <view class="weui-cells__title">描述信息：</view>
+                <view class="weui-cells weui-cells_form">
+                    <view class="weui-cell ">
+                        <view class="weui-cell__bd">
+                            <textarea class="weui-textarea" placeholder="请描述描述信息" rows="3"></textarea>
+                            <view class="weui-textarea-counter"><span>0</span>/200</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cell  weui-cell_uploader">
+            <view class="weui-cell__bd">
+                <view class="weui-uploader">
+                    <view class="weui-uploader__hd">
+                        <p class="weui-uploader__title">上传申办材料</p>
+                        <view class="weui-uploader__info">{{imgUrl.length}}/2</view>
+                    </view>
+                    <view class="weui-uploader__bd">
+                        <view class="weui-uploader__input-box">
+                            <input bindtap="chooseImage" id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple/>
+                        </view>
+                        <view wx:for="{{imgUrl}}"><image class="weui-media-box__thumb img_url {{item.id==1?'img':''}}" src="{{item.tempFilePaths}}" alt=""/></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-form__opr-area" style="margin: 20px 0;">
+        <button bindtap="upImage">上传</button>
+    </view>
+</view>

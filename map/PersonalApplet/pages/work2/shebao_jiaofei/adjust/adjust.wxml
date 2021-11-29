@@ -1,0 +1,138 @@
+<!--pages/work2/shebao_jiaofei/adjust/adjust.wxml-->
+<view class="page" style="top:0em;bottom: 0;padding: 0;">
+    <view class="weui-cells weui-cells_form">
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label" style="font-size: small;">上月社保基数</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="js_input" type="number" class="weui-input" value="1000" placeholder="请填写金额" />
+            </view>
+        </view><view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label" style="font-size: small;">本月社保基数</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="js_input" type="number" class="weui-input"  placeholder="请填写调整后社保基数" />
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label" style="font-size: small;">上月公积金基数</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="js_input" type="number" class="weui-input" value="1000" placeholder="请填写金额" />
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+          <view class="weui-cell__hd">
+              <label class="weui-label" style="font-size: small;">本月公积金基数</label>
+          </view>
+          <view class="weui-cell__bd">
+              <input id="js_input" type="number" class="weui-input" placeholder="请填写调整后公积金基数" />
+          </view>
+      </view>
+    <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">个人养老保险费</label>
+        </view>
+        <view class="weui-cell__bd">
+            <input id="js_input" type="number" class="weui-input" value="1000" />
+        </view>
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">上月：1000</label>
+        </view>
+     </view>
+     <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">个人医疗保险</label>
+        </view>
+        <view class="weui-cell__bd">
+            <input id="js_input" type="number" class="weui-input" value="1000" />
+        </view>
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">上月：1000</label>
+        </view>
+     </view>
+     <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">个人失业保险</label>
+        </view>
+        <view class="weui-cell__bd">
+            <input id="js_input" type="number" class="weui-input" value="1000" />
+        </view>
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">上月：1000</label>
+        </view>
+     </view>
+     <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">单位养老保险费</label>
+        </view>
+        <view class="weui-cell__bd">
+            <input id="js_input" type="number" class="weui-input" value="1000" />
+        </view>
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">上月：1000</label>
+        </view>
+     </view>
+     <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">单位基本医疗保险</label>
+        </view>
+        <view class="weui-cell__bd">
+            <input id="js_input" type="number" class="weui-input" value="1000" />
+        </view>
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">上月：1000</label>
+        </view>
+     </view>
+     <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">单位地方附加医疗保险</label>
+        </view>
+        <view class="weui-cell__bd">
+            <input id="js_input" type="number" class="weui-input" value="1000" />
+        </view>
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">上月：1000</label>
+        </view>
+     </view>
+     <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">单位医疗生育</label>
+        </view>
+        <view class="weui-cell__bd">
+            <input id="js_input" type="number" class="weui-input" value="1000" />
+        </view>
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">上月：1000</label>
+        </view>
+     </view>
+     <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">单位失业保险</label>
+        </view>
+        <view class="weui-cell__bd">
+            <input id="js_input" type="number" class="weui-input" value="1000" />
+        </view>
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">上月：1000</label>
+        </view>
+     </view>
+     <view class="weui-cell weui-cell_active">
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">单位工伤保险</label>
+        </view>
+        <view class="weui-cell__bd">
+            <input id="js_input" type="number" class="weui-input" value="1000" />
+        </view>
+        <view class="weui-cell__hd">
+            <label class="weui-label" style="font-size: small;">上月：1000</label>
+        </view>
+     </view>
+    </view>
+    <view class="weui-form__opr-area" style="margin: 20px 0;">
+        <button bindtap="buttonClick">保存</button>
+    </view>
+  </view>

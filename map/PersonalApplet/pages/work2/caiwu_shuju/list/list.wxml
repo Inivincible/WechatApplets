@@ -1,0 +1,17 @@
+<view class="page" style="top:0em;bottom: 0em;">
+<view class="weui-flex">
+    <view class="weui-flex__item ">
+        <view class="weui-grids box" wx:for="{{datas}}">
+            <a href="javascript:" class="weui-grid">
+                <navigator url="../index/index?id={{ item.iD }}">
+                    <view class="" hover-class="none" hover-stop-propagation="false">
+                        <p class="weui-grid__label">{{ item.month }}</p>
+                            <p class="weui-grid__label">{{ item.name }}</p>
+                            <p class="weui-grid__label">{{ item.money }}</p>
+                        </view>
+                </navigator>
+            </a>
+        </view>
+    </view>
+</view>
+</view>

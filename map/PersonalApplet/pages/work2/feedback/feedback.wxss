@@ -1,0 +1,4 @@
+/* pages/work2/feedback/feedback.wxss */
+.dateStyle{
+    padding-left: 50rpx;
+}

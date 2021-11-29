@@ -1,0 +1,15 @@
+/* pages/work2/yuangong_yeji/list/list.wxss */
+a.weui-cell_access {
+    margin: 14px;
+    margin-top: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+    background: #FFFFFF;
+}
+
+.section{
+    background:#CABBC7;
+    margin:20rpx;
+    padding:20rpx
+}

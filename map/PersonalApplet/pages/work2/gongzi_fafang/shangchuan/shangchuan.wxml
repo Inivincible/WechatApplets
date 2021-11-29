@@ -1,0 +1,18 @@
+
+<view class="page" style="top:0em;bottom: 0;padding: 0;">
+    <view class="weui-cells weui-cells_form">
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">金额</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="js_input" type="number" class="weui-input" value="1000" placeholder="请填写金额" />
+            </view>
+        </view>
+        
+        
+    </view>
+    <view class="weui-form__opr-area" style="margin: 20px 0;">
+        <UploadPic></UploadPic>
+    </view>
+</view>

@@ -1,0 +1,33 @@
+<!--pages/work2/shebao_jiaofei/detail/detail.wxml-->
+<view class="page" style="padding: 14px;bottom: 0;">
+    <view class="page__bd">
+        <view class="weui-form-preview" style="margin-bottom: 14px;" wx:for="{{datas}}">
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">养老保险</label>
+                    <em class="weui-form-preview__value" style="font-size:1.4em ;color: #ed7276;">未缴</em>
+                </view>
+            </view>
+            <view class="weui-form-preview__bd">
+                <view class="weui-form-preview__item form_list">
+                    <label class="weui-form-preview__label">保险账号</label>
+                    <span class="weui-form-preview__value">009258</span>
+                    <span class="weui-form-preview__value">{{ item.bankInfo}}</span>
+                    <span class="weui-form-preview__value">{{ item.bankId}}</span>
+                </view>
+                <view class="weui-form-preview__item form_list">
+                    <label class="weui-form-preview__label">应缴保险金额</label>
+                    <span class="weui-form-preview__value">{{ item.money}}</span>
+                </view>
+                <view class="weui-form-preview__item form_list">
+                    <label class="weui-form-preview__label">已上传余额凭证</label>
+                    <span class="weui-form-preview__value">¥500.00</span>
+                    <span class="weui-form-preview__value">2020/4/9</span>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-form__opr-area" style="margin: 20px 0;">
+        <UploadPic></UploadPic>
+    </view>
+</view>

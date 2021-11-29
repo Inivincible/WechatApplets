@@ -1,0 +1,21 @@
+/* pages/work2/zuoyigong/list/list.wxss */
+a.weui-media-box{
+    margin-bottom: 14px;
+}
+.weui-media-box__info{
+    margin-top: 4px;
+}
+.weui-media-box_appmsg .weui-media-box__hd{
+    height: 80px;
+    width: 100px;
+}
+.weui-media-box__info__meta{
+    padding-bottom: 4px;
+}
+
+/*隐藏导航条*/
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+  }

@@ -1,0 +1,19 @@
+<!--pages/mall/mall.wxml-->
+<!--pages/main/new_communication/new_communication.wxml-->
+<view class="page" style="padding: 0;bottom: 0em;">
+    <view class="weui-tab">         
+            <view class="weui-panel__bd" bindtap="detail" wx:for="{{mall}}" id ="{{item.id}}">
+                <a class="weui-media-box weui-media-box_appmsg">
+                    <view  open-type="navigate">
+                    <view class="weui-media-box__hd">
+                        <image class="weui-media-box__thumb" src="{{url}}{{item.img}}" />
+                    </view>
+                    <view class="weui-media-box__bd" >
+                            <text class="weui-media-box__title">{{item.name}}</text>
+                            <p><span>¥</span><span>{{item.money}}</span></p>
+                        </view>
+                    </view>
+                </a>
+            </view>
+    </view>
+</view>

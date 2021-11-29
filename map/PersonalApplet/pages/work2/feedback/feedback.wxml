@@ -1,0 +1,30 @@
+<!--pages/work2/feedback/feedback.wxml-->
+<view class="page" style="padding: 0;bottom: 0;">
+    <view class="page__bd" style="height: 100%;">
+        <view class="weui-tab">
+            <view class="weui-tab__panel">
+                <view class="weui-cells weui-cells_form">
+                    <view class="weui-cell weui-cell_active" >
+                        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                            <view class="picker">
+                                意见类型：<span class="dateStyle">{{array[index]}}</span>
+                            </view>
+                        </picker>
+                    </view>
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">您的建议：</label>
+                            <view class="weui-cell__bd">
+                                <textarea style="width: 700rpx;" class="weui-textarea" id="Content" placeholder="请填写您的建议不得少于10个字！" rows="4" bindinput="handleInput"></textarea>
+                                <view class="weui-textarea-counter"><span>{{Content.length}}</span>/140</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="weui-form__opr-area" style="margin: 20px 0;">
+                    <button bindtap="ReleasePinion" class="weui-btn weui-btn_primary" >反馈</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

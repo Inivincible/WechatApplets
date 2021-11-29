@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "UploadPic":"../../../../component/UploadPic/UploadPic"
+  },
+  
+  "navigationBarTitleText" : "申报缴费详细"
+}

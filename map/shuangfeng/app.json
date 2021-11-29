@@ -1,0 +1,59 @@
+{
+    "pages": [
+        "pages/map/map",
+        "pages/index/index",
+        "pages/rim/rim"
+    ],
+    "subpackages": [
+        {
+            "root": "pages/pagesA",
+            "pages": [
+                "details/details"
+            ]
+        }
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "为了让你更好的体验双凤旅游"
+        }
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#000",
+        "selectedColor": "#666",
+        "borderStyle": "black",
+        "backgroundColor": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "全貌",
+                "iconPath": "icon/fujin1.png",
+                "selectedIconPath": "icon/fujin0.png"
+            },
+            {
+                "pagePath": "pages/map/map",
+                "text": "地图",
+                "iconPath": "icon/ditu0.png",
+                "selectedIconPath": "icon/ditu1.png"
+            },
+            {
+                "pagePath": "pages/rim/rim",
+                "text": "智慧游",
+                "iconPath": "icon/luyou1.png",
+                "selectedIconPath": "icon/luyou0.png"
+            }
+        ]
+    },
+    "plugins": {
+        "routePlan": {
+            "version": "1.0.13",
+            "provider": "wx50b5593e81dd937a"
+        }
+    },
+    "sitemapLocation": "sitemap.json"
+}

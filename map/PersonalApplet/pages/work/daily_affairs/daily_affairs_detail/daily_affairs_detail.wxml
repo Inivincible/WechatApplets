@@ -1,0 +1,58 @@
+<view class="page" style="padding: 0;bottom: 0;">
+			<view class="weui-form-preview">
+				<view class="weui-form-preview__hd">
+					<view class="weui-form-preview__item">
+						<label class="weui-form-preview__label">任务名称：</label>
+						<em class="weui-form-preview__value">{{transactionDetail.theme}}</em>
+					</view>
+				</view>
+				<view class="weui-form-preview__bd">
+					<view class="weui-form-preview__item">
+						<label class="weui-form-preview__label">发布人：</label>
+						<span class="weui-form-preview__value">{{transactionDetail.issuer}}</span>
+					</view>
+					<view class="weui-form-preview__item">
+						<label class="weui-form-preview__label">发布单位：</label>
+						<span class="weui-form-preview__value">{{transactionDetail.unit}}</span>
+					</view>
+					<view class="weui-form-preview__item">
+						<label class="weui-form-preview__label">需完成时间：</label>
+						<span class="weui-form-preview__value">{{transactionDetail.time}}</span>
+					</view>
+					<view class="weui-form-preview__item">
+						<label class="weui-form-preview__label">联系电话：</label>
+						<span class="weui-form-preview__value">{{transactionDetail.phone}}</span>
+					</view>
+					<view class="weui-form-preview__item">
+						<label class="weui-form-preview__label">任务类型：</label>
+						<span class="weui-form-preview__value">日常事务</span>
+					</view>
+					<view class="weui-form-preview__item">
+						<label class="weui-form-preview__label">任务描述：</label>
+						<span class="weui-form-preview__value">{{transactionDetail.commitments}}</span>
+					</view>
+					<view wx:if="{{transactionDetail.receivedBy.length>0&&transactionOn==1}}" class="weui-form-preview__item">
+						<label class="weui-form-preview__label">接单人：</label>
+						<span class="weui-form-preview__value">{{transactionDetail.receivedBy}}</span>
+					</view>
+					<view wx:if="{{transactionDetail.pic1.length>3&&transactionOn==1}}" class="weui-form-preview__item">
+						<label class="weui-form-preview__label">完成证明：</label>
+						<image src="{{url}}{{transactionDetail.pic1}}" />
+					</view>
+					<view wx:if="{{transactionDetail.pic2.length>3&&transactionOn==1}}" class="weui-form-preview__item">
+						<label class="weui-form-preview__label">付款证明：</label>
+						<image src="{{url}}{{transactionDetail.pic2}}" />
+					</view>
+					<view class="weui-form-preview__item">
+						<label class="weui-form-preview__label">任务状态：</label>
+						<span class="weui-form-preview__value">{{transactionDetail.taskStatus}}</span>
+					</view>
+				</view>
+				<view class="weui-form-preview__ft" wx:if="{{transactionOn==2&&transactionDetail.taskStatus==='未接单'||transactionDetail.taskStatus==='上月事务未接单'}}">
+					<a class="weui-form-preview__btn weui-form-preview__btn_primary" bindtap="PickTask">承接任务</a>
+				</view>
+				<view class="weui-form-preview__ft" wx:if="{{transactionOn==2&&transactionDetail.taskStatus==='上月事务未付款'||transactionDetail.taskStatus==='上月事务未完成'}}">
+					<a class="weui-form-preview__btn weui-form-preview__btn_primary" bindtap="PickTask">继续任务</a>
+				</view>
+			</view>
+</view>

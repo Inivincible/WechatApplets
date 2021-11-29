@@ -1,0 +1,31 @@
+<!--pages/office_lease_pay/office_lease_pay.wxml-->
+<view class="">
+    <view class="page" style="top:0em;bottom: 0;padding:0;">
+        <view class="weui-tab">
+            <scroll-view class="weui-tab__panel"
+                scroll-y
+                refresher-enabled
+                bindrefresherrefresh="handleRefresher"
+                refresher-background="#f7f7f7"
+                refresher-default-style="black"
+                refresher-triggered="{{isTriggered}}">
+
+            <view class="weui-tab__panel">
+                <view class="weui-form-preview">
+                    <view wx:for="{{chummage}}" class="weui-cells">
+                        <view class="weui-cell weui-cell_active weui-cell_access">
+                            <view class="weui-cell__bd ">
+                                <p>{{item.rentalUnits}}</p>
+                            </view>
+                            
+                            <view class="weui-cell__ft" style="font-size: 0;">
+                                <a style="vertical-align: middle; font-size: 17px;">欠费：{{item.owe}}</a>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            </scroll-view>
+        </view>
+    </view>
+</view>

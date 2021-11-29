@@ -1,0 +1,12 @@
+<!--pages/rim/rim.wxml-->
+<view>
+    <view class="card" wx:for="{{navigation}}" id = "{{item}}" wx:if="{{item.id!=null}}" style="position: relative; left: 0rpx; top: -2rpx; width: 710rpx; height: 483rpx; display: block; box-sizing: border-box">
+        <view bindtap="onItemClick" style="width: 702rpx; height: 492rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+            <image class="image" mode="aspectFill" src="{{url}}{{item.img1}}"/>
+            <view class="title" style="position: relative; width: 400rpx; height: 40rpx; display: block; box-sizing: border-box; left: 30rpx; top: 10rpx; font-size: 23rpx;line-height: 40rpx;">{{item.name}}</view>
+            <button class="button bton0 confirm bubble" id = "{{item.id}}" style="width: 100rpx; height: 40rpx; left: 430rpx; top: -30rpx; position: relative; line-height: 40rpx" bindtap="details">详情</button>
+            <button class="button bton1 confirm bubble" id = "{{item.id}}" style="width: 100rpx; height: 40rpx; left: 572rpx; top: -70rpx; position: relative; line-height: 40rpx" bindtap="navigation">导航</button>
+        </view>
+    </view>
+</view>
+

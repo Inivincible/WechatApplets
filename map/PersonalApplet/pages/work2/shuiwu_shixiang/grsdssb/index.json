@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "UploadPic":"../../../../component/UploadPic/UploadPic"
+  }
+  ,
+  "navigationBarTitleText" : "财务数据列表"
+}

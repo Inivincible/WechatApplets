@@ -1,0 +1,32 @@
+<!--pages/work2/caiwu_shuju/index/index.wxml-->
+<view class="page" style="padding: 14px;bottom: 0;">
+    <view class="page__bd" wx:for="{{ datas }}">
+        <view class="weui-form-preview" style="margin-bottom: 14px;">
+            <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                    <label class="weui-form-preview__label">XX收款</label>
+                    <em class="weui-form-preview__value" style="font-size:1.4em ;color: #ed7276;">未缴</em>
+                </view>
+            </view>
+            <view class="weui-form-preview__bd">
+                <view class="weui-form-preview__item form_list">
+                    <label class="weui-form-preview__label">月份</label>
+                    <span class="weui-form-preview__value">{{ item.month }}</span>
+                </view>
+                <view class="weui-form-preview__item form_list">
+                    <label class="weui-form-preview__label">基金账号</label>
+                    <span class="weui-form-preview__value">009258</span>
+                    <span class="weui-form-preview__value">中国建设银行上海福建路支行</span>
+                    <span class="weui-form-preview__value">3102157300000278</span>
+                </view>
+                <view class="weui-form-preview__item form_list">
+                    <label class="weui-form-preview__label">应缴金额</label>
+                    <span class="weui-form-preview__value">{{ item.money }}</span>
+                </view>
+            </view>
+            <view class="weui-form-preview__ft">
+                <a class="weui-form-preview__btn weui-form-preview__btn_primary" href="javascript:">缴费</a>
+            </view>
+        </view>
+    </view>
+</view>

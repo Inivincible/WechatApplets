@@ -1,0 +1,58 @@
+<!--pages/main/user_zhuce.wxml-->
+<view class="page" style="top:0em;bottom: 0;padding: 0;">
+    <view class="weui-cells weui-cells_form">
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">账号：</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="UserName" type="text" class="weui-input" value="" placeholder="请填写账号"
+                       bindinput="handleInput"/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">用户名：</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="RealName" type="text" class="weui-input" value="" placeholder="请填写用户名"
+                       bindinput="handleInput"/>
+            </view>
+        </view>
+        
+        <view class="weui-cell">
+            <view class="weui-cell__hd">
+                <label class="weui-label">密码：</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input autofocus class="weui-input" password="{{passWordType}}"
+                       placeholder="请填写密码" id="PassWord" bindinput="handleInput"/>
+                <span class="iconfont {{yanjingType?'icon-yanjing_yincang':'icon-yanjing_xianshi'}}" bindtap="eyeStates"></span>
+            </view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__hd">
+                <label class="weui-label">确认密码：</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input autofocus class="weui-input" password="{{passWordTypes}}"
+                       placeholder="请再次填写密码" id="PassWord1" bindinput="handleInput"/>
+                <span class="iconfont {{yanjingTypes?'icon-yanjing_yincang':'icon-yanjing_xianshi'}}" bindtap="eyeStatess"></span>
+            </view>
+        </view>
+
+        <view class="weui-cell">
+            <view class="weui-cell__hd">
+                <label class="weui-label">手机号码：</label>
+            </view>
+            <view class="weui-cell__bd wuxi-kjian">
+                <input id="Mobile" type="text" class="weui-input wuxing" value="{{Mobile}}" placeholder="请填写手机号码"
+                       bindinput="handleInput"/>
+                <button class="wuxi-button" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">一键获取</button>
+            </view>
+        </view>
+        <view class="weui-form__opr-area" style="margin:48px 0;">
+            <a class="weui-btn weui-btn_primary weui-btn_disabled" bindtap="buttonClick">注册</a>
+        </view>
+    </view>
+</view>

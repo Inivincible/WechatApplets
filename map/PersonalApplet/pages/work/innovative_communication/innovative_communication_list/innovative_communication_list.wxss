@@ -1,0 +1,58 @@
+/* pages/innovative_communication_list/innovative_communication_list.wxss */
+a.weui-media-box{
+    margin-bottom: 14px;
+}
+.weui-media-box__info{
+    margin-top: 4px;
+}
+.weui-media-box_appmsg .weui-media-box__hd{
+    height: 80px;
+    width: 100px;
+}
+.weui-media-box__info__meta{
+    padding-bottom: 4px;
+}
+
+/*横向滚动条*/
+.scroll-header{
+    display: flex;
+    white-space: nowrap;
+}
+.scroll-header view{
+    display: inline-block;
+    width: 200rpx;
+}
+/*隐藏导航条*/
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.color1{
+    background-color: lightgreen;
+}
+.color2{
+    background-color: tomato;
+}
+/*悬浮窗*/
+.post{
+    z-index: 1;
+    float: right;
+    background-color: white;
+    position: fixed;
+    width: 75rpx;
+    height: 75rpx;
+    bottom: 100rpx;
+    right: 80rpx;
+    border: 0 solid #ffffff;
+    border-radius: 50%;
+}
+.icochange{
+    font-family: "iconfont" !important;
+    font-size: 75rpx;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #eb4450;
+}

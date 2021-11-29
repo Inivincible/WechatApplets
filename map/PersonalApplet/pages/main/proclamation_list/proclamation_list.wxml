@@ -1,0 +1,32 @@
+<!--pages/main/proclamation_list/proclamation_list.wxml-->
+<view class="page" style="top:0em;bottom: 0;padding:0;">
+    <view class="weui-panel weui-panel_access">
+        <scroll-view class="weui-panel__bd"
+                     scroll-y
+                     refresher-enabled
+                     bindrefresherrefresh="onLoad"
+                     refresher-background="#f7f7f7"
+                     refresher-default-style="black"
+                     refresher-triggered="{{isTriggered}}"
+        >
+            <view bindtap="detail" class="weui-media-box weui-media-box_appmsg"
+                       open-type="navigate" wx:for="{{notice}}" data-song="{{item}}">
+
+                <div class="weui-media-box__hd">
+                <span class="notice_icon orange_bg">
+                <i class="icon iconfont icon-gonggao-copy tangerine"></i>
+              </span>
+                </div>
+                <view class="weui-media-box__bd">
+                    <h4 class="weui-media-box__title">{{item.title}}</h4>
+                    <p class="weui-media-box__desc">
+                        {{item.content}}
+                    </p>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+
+
+<!--url="../../work/proclamation/detail/detail"-->

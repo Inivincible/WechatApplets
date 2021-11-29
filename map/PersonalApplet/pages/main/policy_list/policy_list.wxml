@@ -1,0 +1,71 @@
+<!--pages/main/policy_list/policy_list.wxml-->
+<view class="page" style="padding: 0;bottom: 0;">
+    <view class="page__bd" style="height: 100%;">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <view class='weui-navbar__item {{tabnumber==1?"weui-bar__item_on":""}}' bindtap="clicktab1">
+                    政策申请
+                </view>
+                <view class='weui-navbar__item {{tabnumber==2?"weui-bar__item_on":""}}' bindtap="clicktab2">
+                    资金状态
+                </view>
+            </view>
+            <scroll-view
+                    scroll-y
+                    refresher-enabled
+                    bindrefresherrefresh="handleRefresher"
+                    refresher-background="#f7f7f7"
+                    refresher-default-style="black"
+                    refresher-triggered="{{isTriggered}}"
+                    wx:if="{{tabnumber ==1}}" class="weui-tab__panel">
+                <view class="weui-media-box weui-media-box_appmsg" bindtap="detail" target=""
+                           hover-class="navigator-hover" open-type="navigate" wx:for="{{policy}}" data-song="{{item}}">
+                    <view class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">{{item.policyName}}</h4>
+                        <ul class="weui-media-box__info">
+                            <li class="weui-media-box__info__meta">剩余时间：{{item.forIndustry}}</li>
+                            <li class="weui-media-box__info__meta">时间：{{item.endDay}}</li>
+                        </ul>
+                    </view>
+                </view>
+            </scroll-view>
+            <scroll-view
+                    scroll-y
+                    refresher-enabled
+                    bindrefresherrefresh="handleRefresher"
+                    refresher-background="#f7f7f7"
+                    refresher-default-style="black"
+                    refresher-triggered="{{isTriggered}}"
+                    wx:if="{{tabnumber ==2}}" class="weui-tab__panel">
+                <view class="weui-cells" wx:for="{{state}}" data-song="{{item}}" >
+                    <view wx:if="{{item.applyState=='通过申请'||item.applyState=='已通过申请'}}">
+                        <navigator class="weui-cell weui-cell_active weui-cell_access" target=""
+                                url="../../work/policy/fund_detail/fund_detail?ID={{item.iD}}&&PolicyName={{item.policyName}}&&ApplyTime={{item.applyTime}}&&AmountState={{item.amountState}}&&F_ID={{item.f_ID}}&&Amount={{item.amount}}" hover-class="navigator-hover"
+                                open-type="navigate">
+                            <view class="weui-cell__bd ">
+                                <p>{{item.policyName}}</p>
+                                <p style="font-size: 13px; color: #888;">申请时间：{{item.applyTime}}</p>
+                            </view>
+                            <view class="weui-cell__ft" style="font-size: 0;">
+                                <a style="vertical-align: middle; font-size: 17px;">{{item.applyState}}</a>
+                            </view>
+                        </navigator>
+                    </view>
+                    <view wx:else>
+                        <navigator class="weui-cell weui-cell_active weui-cell_access" target=""
+                                url="../../work/policy/resource_up/resource_up?ID={{item.iD}}&&policyID={{item.f_ID}}"   hover-class="navigator-hover"
+                                open-type="navigate">
+                            <view class="weui-cell__bd ">
+                                <p>{{item.policyName}}</p>
+                                <p style="font-size: 13px; color: #888;">申请时间：{{item.applyTime}}</p>
+                            </view>
+                            <view class="weui-cell__ft" style="font-size: 0;">
+                                <a style="vertical-align: middle; font-size: 17px;">{{item.applyState}}</a>
+                            </view>
+                        </navigator>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+</view>

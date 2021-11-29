@@ -1,0 +1,47 @@
+
+<view class="page" style="padding: 0;bottom: 0;">
+    <view class="page__bd" style="height: 100%;">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <view class="weui-navbar__item weui-bar__item_on">
+                    义工备案须知
+                </view>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-cells weui-cells_form">
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            
+                            <view class="weui-cell__bd">
+                                <textarea style="width: 700rpx;height: 700rpx;" class="weui-textarea" disabled="true" placeholder="" rows="3">
+                                    须知内容xxxx</textarea>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_active" hidden="{{hiddenName}}">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">意见</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <checkbox bindtap="tongyi" id="consent">
+                                同意
+                            </checkbox>
+                        </view>
+                    </view>
+                    <!-- <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">签名</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input id="Name" class="weui-input" placeholder="签名" type="text" bindinput="handleInput"/>
+                        </view>
+                    </view> -->
+                </view>
+                <view class="weui-form__opr-area" style="margin: 20px 0;">
+                    <button id="click" bindtap="commit" class="weui-btn weui-btn_primary">提交</button>
+                </view>
+            </view>
+
+        </view>
+    </view>
+</view>

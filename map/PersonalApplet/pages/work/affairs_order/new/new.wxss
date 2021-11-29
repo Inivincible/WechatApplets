@@ -1,0 +1,4 @@
+/* pages/work/affairs_order/new/new.wxss */
+.dateStyle{
+    padding-left: 70rpx;
+}

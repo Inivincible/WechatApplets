@@ -1,0 +1,35 @@
+<!--pages/pagesA/mallDetails/mallDetails.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <view class="page_img">
+      <image src="{{url}}{{details.img}}" />
+    </view>
+    <view class="inner_title">
+      <h4 class="weui-media-box__title">{{details.name}}</h4>
+    </view>
+    
+    <view class="inner_text">
+      <p><span>¥</span><span>{{details.money}}</span>
+        <a class="inner_btn inner_btn_pro" bindtap="detail" id="{{details.id}}">
+        立即购买
+        </a>
+    </p>
+    </view>
+    <view class="inner_edit">
+      <view class="weui-form-preview__bd">
+        <view class="weui-form-preview__item form_list">
+          <label class="weui-form-preview__label">类别：</label>
+          <span class="weui-form-preview__value">{{details.type}}</span>
+        </view>
+        <view class="weui-form-preview__item form_list">
+          <label class="weui-form-preview__label">描述：</label>
+          <span class="weui-form-preview__value">{{details.introduction}}</span>
+        </view>
+        <view class="weui-form-preview__item form_list">
+          <label class="weui-form-preview__label">商家电话：</label>
+          <span class="weui-form-preview__value">{{details.tel}}</span>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

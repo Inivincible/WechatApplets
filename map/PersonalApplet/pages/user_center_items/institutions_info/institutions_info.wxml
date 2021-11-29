@@ -1,0 +1,183 @@
+<view class="page" style="top:0em;bottom: 0;padding: 0;">
+    <view class="weui-cells weui-cells_form">
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">企业名</label>
+            </view>
+            <view class="weui-cell__bd">
+                <text>{{Name}}</text>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">企业编码</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="BranchCode" type="text" class="weui-input" value="{{BranchCode}}"
+                    placeholder="请填写企业编码" bindinput="handleInput"/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">注册资本</label>
+            </view>
+            <view class="weui-cell__bd weui-mkj">
+                <input id="Rcapital" type="text" class="weui-input weui-money" value="{{Rcapital}}"
+                    placeholder="请填写注册资本" bindinput="handleInput"/>
+                <span class="money">￥</span>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">成立日期</label>
+            </view>
+            <view class="weui-cell__bd">
+                <picker mode="date" value="{{date}}" start="2000-09-01" end="2020-09-01" bindchange="bindDateChange" bindinput="handleInput">
+                    <view class="weui-input">
+                        {{date}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">注册地址</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="Incoraddress" type="text" class="weui-input" value="{{Incoraddress}}"
+                    placeholder="请填写注册地址" bindinput="handleInput"/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">办公地址</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="Address" type="text" class="weui-input" value="{{Address}}"
+                    placeholder="请填写办公地址" bindinput="handleInput"/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">邮编</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="Fax" type="text" class="weui-input" value="{{Fax}}"
+                    placeholder="请填写邮编" bindinput="handleInput"/>
+            </view>
+        </view>
+        
+        <view class="weui-cell  weui-cell_uploader">
+            <view class="weui-weui-cell__bd">
+                <view class="weui-uploader">
+                    <view class="weui-uploader__hd">
+                        <p class="weui-uploader__title">营业执照</p>
+                        <view wx:if="{{Pic3.length==0||Pic3=='undefined'||Pic3==undefined}}" class="weui-uploader__info">{{imgUrl.length}}/1</view>
+                        <view wx:else class="weui-uploader__info">1/1</view>
+                    </view>
+                    <view wx:if="{{Pic3.length==0||Pic3=='undefined'||Pic3==undefined}}" class="weui-uploader__bd weui-zhao">
+                        <view class="weui-uploader__input-box weui-add">
+                            <input bindtap="chooseImage" id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple/>
+                        </view>
+                        <view wx:for="{{imgUrl}}"><image id="src" class="weui-media-box__thumb img_url {{item.id==1?'img':''}}" src="{{item.tempFilePaths}}" alt=""/></view>
+                    </view>
+                    <view wx:else class="weui-uploader__bd weui-zhao">
+                        <view>
+                            <image class="weui-pic" src="{{url}}{{Pic3}}"/>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cell  weui-cell_uploader">
+            <view class="weui-weui-cell__bd">
+                <view class="weui-uploader">
+                    <view class="weui-uploader__hd">
+                        <p class="weui-uploader__title">经营许可证</p>
+                        <view wx:if="{{Pic4.length==0||Pic4=='undefined'||Pic4==undefined}}" class="weui-uploader__info">{{imgUrls.length}}/1</view>
+                        <view wx:else class="weui-uploader__info">1/1</view>
+                    </view>
+                    <view wx:if="{{Pic4.length==0||Pic4=='undefined'||Pic4==undefined}}" class="weui-uploader__bd weui-zhao">
+                        <view class="weui-uploader__input-box weui-add">
+                            <input bindtap="chooseImages" id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple/>
+                        </view>
+                        <view wx:for="{{imgUrls}}"><image id="src" class="weui-media-box__thumb img_url {{item.id==1?'img':''}}" src="{{item.tempFilePathss}}" alt=""/></view>
+                    </view>
+                    <view wx:else class="weui-uploader__bd weui-zhao">
+                        <view>
+                            <image class="weui-pic" src="{{url}}{{Pic4}}"/>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">联系电话</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="Phone" type="number" pattern="[0-9]*" class="weui-input" value="{{Phone}}"
+                    placeholder="请填写联系电话" bindinput="handleInput"/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">统一编码</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="Ucoding" type="text" class="weui-input" value="{{Ucoding}}"
+                    placeholder="请填写统一编码" bindinput="handleInput"/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">法人姓名</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="Corporname" type="text" class="weui-input" value="{{Corporname}}"
+                    placeholder="请填写法人姓名" bindinput="handleInput"/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">法人身份证</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="CorporationID" type="text" class="weui-input" value="{{CorporationID}}"
+                    placeholder="请填写法人身份证" bindinput="handleInput"/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">开户银行</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="Bank" type="text" class="weui-input" value="{{Bank}}"
+                    placeholder="请填写开户银行" bindinput="handleInput"/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">账号</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="Account" type="text" class="weui-input" value="{{Account}}"
+                    placeholder="请填写账号" bindinput="handleInput"/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">开户编码</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="Openingcode" type="text" class="weui-input" value="{{Openingcode}}"
+                    placeholder="请填写开户编码" bindinput="handleInput"/>
+            </view>
+        </view>
+        <view class="weui-form__opr-area" style="margin:48px 0;">
+            <a class="weui-btn weui-btn_primary weui-btn_disabled" id="showTooltips" bindtap="buttonClick">保存</a>
+        </view>
+    </view>
+</view>

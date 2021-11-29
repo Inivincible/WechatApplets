@@ -1,0 +1,18 @@
+/* pages/work2/shebao_jiaofei/list/list.wxss */
+.weui-media-box {
+    border-radius: 0;
+}
+.weui-panel:first-child {
+    margin-bottom: 14px;
+}
+.weui-cells {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.weui-form-preview{
+    margin: 14px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 0;
+}

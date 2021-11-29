@@ -1,0 +1,62 @@
+/* pages/index/index.wxss */
+.index_swiper{
+    width: 750rpx;
+    height: 340rpx;
+}
+.index_swiper image {
+    width: 100%;
+  }
+
+.index_swiper_item{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 28rpx;
+  }
+
+  .weui-content1{
+    overflow: hidden;
+    height: 50rpx;
+    line-height: 44rpx;
+    position: relative;
+    width: 100%;
+    margin-top: 0rpx;
+}
+
+
+@keyframes around{
+    from{
+        margin-left: 120%;
+    }
+    20%{
+        margin-left: 36%;
+    }
+    40%{
+        margin-left: -48%;
+    }
+    60%{
+        margin-left: -132%;
+    }
+    80%{
+        margin-left: -216%;
+    }
+    100%{
+        margin-left: -300%;
+    }
+}
+.weui-text{
+    font-size: 28rpx;
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: around;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* 消除页面上下滚动条 */
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}

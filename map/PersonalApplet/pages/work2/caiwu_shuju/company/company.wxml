@@ -1,0 +1,19 @@
+<view class="page" style="top:0em;bottom: 0em;">
+    <view class="weui-flex">
+        <view class="weui-flex__item ">
+            <view wx:for="{{ datas }}">
+                <view>
+                    <a class="weui-grid">
+                        <navigator url="../list/list?company={{ item.company }}">
+                            <view class="" hover-class="none" hover-stop-propagation="false">
+                                <p class="weui-grid__label"></p>
+                                <p class="weui-grid__label">{{item.company}}</p>
+                                <p class="weui-grid__label"></p>
+                            </view>
+                        </navigator>
+                    </a>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

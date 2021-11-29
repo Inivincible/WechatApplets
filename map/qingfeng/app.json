@@ -1,0 +1,68 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/map/map",
+        "pages/rim/rim",
+        "pages/mall/mall"
+    ],
+    "subpackages": [
+        {
+            "root": "pages/pagesA",
+            "pages": [
+                "details/details",
+                "mallDetails/mallDetails",
+                "pay/pay"
+            ]
+        }
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "为了让你更好的体验双凤旅游"
+        }
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#000",
+        "selectedColor": "#666",
+        "borderStyle": "black",
+        "backgroundColor": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "简介",
+                "iconPath": "icon/jianjie.png",
+                "selectedIconPath": "icon/jianjie1.png"
+            },
+            {
+                "pagePath": "pages/map/map",
+                "text": "地图",
+                "iconPath": "icon/ditu0.png",
+                "selectedIconPath": "icon/ditu1.png"
+            },
+            {
+                "pagePath": "pages/rim/rim",
+                "text": "智慧游",
+                "iconPath": "icon/luyou1.png",
+                "selectedIconPath": "icon/luyou0.png"
+            },
+            {
+                "pagePath": "pages/mall/mall",
+                "text": "商城",
+                "iconPath": "icon/shangcheng0.png",
+                "selectedIconPath": "icon/shangcheng1.png"
+            }
+        ]
+    },
+    "plugins": {
+        "routePlan": {
+            "version": "1.0.13",
+            "provider": "wx50b5593e81dd937a"
+        }
+    },
+    "sitemapLocation": "sitemap.json"
+}

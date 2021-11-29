@@ -1,0 +1,77 @@
+/* pages/pagesA/mallDetails/mallDetails.wxss */
+.weui-media-box {
+    border-radius: 0;
+}
+.weui-panel:first-child {
+    margin-bottom: 14px;
+}
+.page {
+    padding: 0;
+    bottom: 0;
+    }
+
+    /* 图片居中 */
+.page_img{
+    display: flex;
+    justify-content: center;
+}
+.page_img image{
+    width: 750rpx;
+    /* height: 600rpx; */
+}
+.inner_title{
+    padding: 28rpx;
+    background: #FFFFFF;
+    margin-top: 24rpx;
+    border-bottom: 1px solid #e8e8e8;
+}
+.weui-media-box__title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: inherit;
+    height: 44px;
+    font-size: 1em;
+}
+
+.inner_text{
+    background: #FFFFFF;
+    padding-bottom: 1.7em;
+    margin-bottom: .5em;
+}
+.inner_text p{
+    display: block;
+    padding: 1.5em 1em 0em 1em;
+    color: #ed7276;
+}
+.inner_text p span{
+    font-size: 44.8rpx;
+}
+.inner_btn{
+    padding: .2em 1em;
+    background: #FFFFFF;
+    vertical-align: center;
+    text-align: justify;
+    color: #ed7276;
+    border: 1px solid #ed7276;
+    float: right;
+    margin: .1em .5em;
+    border-radius:4px ;
+}
+.inner_btn_pro{
+    background: #ed7276;
+    color: #FFFFFF;
+}
+.inner_edit{
+    margin: 0em 0;
+    background: #FFFFFF;
+}
+
+/* 消除页面上下滚动条 */
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}

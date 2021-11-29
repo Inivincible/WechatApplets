@@ -1,0 +1,40 @@
+<!--pages/work2/zuoyigong/list/list.wxml-->
+
+<view class="page" style="bottom: 0;">
+    <view class="weui-tab">
+        <view class="weui-tab__panel" style="padding: 14px">
+            <!-- <view class="weui-navbar">
+                
+                <view class="weui-navbar__item weui-bar__item_on">
+                    义工
+                </view>
+            </view> -->
+            <scroll-view class="weui-tab__panel"
+                     scroll-y
+                     refresher-enabled
+                     bindrefresherrefresh="handleRefresher"
+                     refresher-background="#f7f7f7"
+                     refresher-default-style="black"
+                     refresher-triggered="{{isTriggered}}">
+            <view class="weui-panel__bd" wx:for="{{Volunteers}}" data-song="{{item}}" id="Volunteers" bindtap="detail">
+                <a href="javascript:" class="weui-media-box weui-media-box_appmsg"  style="background-color: tomato;">
+                    <view class="weui-media-box__bd">
+                        <view class="weui-media-box__title">
+                                {{item.theme}}
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>发布人：{{item.issuer}}</text>
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>任务地点：{{item.place}}</text>
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>联系方式：{{item.phone}}</text>
+                            </view>
+                        </view>
+                    </a>
+            </view>
+            </scroll-view>
+        </view>
+    </view>
+</view>

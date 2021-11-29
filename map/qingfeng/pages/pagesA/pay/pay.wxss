@@ -1,0 +1,15 @@
+/* pages/pagesA/pay/pay.wxss */
+.wuxi-button{
+    float: right;
+    font-size: 20rpx;
+    width: 150rpx;
+    height: 48rpx;
+  }
+  .wuxing{
+    float: left;
+    width: 300rpx;
+    height: 48rpx;
+  }
+  .wuxi-kjian{
+    height: 48rpx;
+  }

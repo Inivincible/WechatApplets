@@ -1,0 +1,126 @@
+<!--pages/work2/linghuaqian/list/list.wxml-->
+
+<view class="page" style="bottom: 0;">
+  <view class="weui-tab">
+      <view class="weui-tab__panel" style="padding: 14px">
+          <view class="weui-navbar">
+            <scroll-view class="scroll-header" scroll-x="true">
+                <view class="weui-navbar__item {{Type=='全部事务'?'weui-bar__item_on':''}}" data-value="全部事务" bindtap="handleTap">
+                    全部事务
+                </view>
+                <view class="weui-navbar__item {{Type=='0'?'weui-bar__item_on':''}}" data-value="0" bindtap="handleTap">
+                    日常事务
+                </view>
+                <view class="weui-navbar__item {{Type=='1'?'weui-bar__item_on':''}}" data-value="1" bindtap="handleTap">
+                    临时事务
+                </view>
+                <!-- <view class="weui-navbar__item {{Type=='2'?'weui-bar__item_on':''}}" data-value="2" bindtap="handleTap">
+                    义工事务
+                </view> -->
+                <view class="weui-navbar__item {{Type=='3'?'weui-bar__item_on':''}}" data-value="3" bindtap="handleTap">
+                    个人事务
+                </view>
+            </scroll-view>
+          </view>
+
+          <scroll-view class="weui-tab__panel"
+                     scroll-y
+                     refresher-enabled
+                     bindrefresherrefresh="handleRefresher"
+                     refresher-background="#f7f7f7"
+                     refresher-default-style="black"
+                     refresher-triggered="{{isTriggered}}">
+          <view wx:if="{{Type=='全部事务'}}" wx:for="{{All}}" data-song="{{item}}" class="weui-panel__bd" id="All" bindtap="details">
+                <a href="javascript:" class="weui-media-box weui-media-box_appmsg" style="background-color: rgb(255, 99, 71);">
+                    <view class="weui-media-box__bd">
+                        <view class="weui-media-box__title">
+                                {{item.theme}}
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>发布人：{{item.issuer}}</text>
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>任务地点：{{item.place}}</text>
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>联系方式：{{item.phone}}</text>
+                            </view>
+                        </view>
+                    </a>
+            </view>
+            <view wx:if="{{Type==0}}" wx:for="{{Daily}}" data-song="{{item}}" class="weui-panel__bd" id="Daily" bindtap="detail">
+                <a href="javascript:" class="weui-media-box weui-media-box_appmsg"  style="background-color: rgb(200, 255, 71);">
+                    <view class="weui-media-box__bd">
+                        <view class="weui-media-box__title">
+                                {{item.theme}}
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>发布人：{{item.issuer}}</text>
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>任务地点：{{item.place}}</text>
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>联系方式：{{item.phone}}</text>
+                            </view>
+                        </view>
+                    </a>
+            </view>
+            <view wx:if="{{Type==1}}" wx:for="{{Temporary}}" data-song="{{item}}" class="weui-panel__bd" id="Temporary" bindtap="detail">
+                <a href="javascript:" class="weui-media-box weui-media-box_appmsg"  style="background-color: rgb(71, 218, 255);">
+                    <view class="weui-media-box__bd">
+                        <view class="weui-media-box__title">
+                                {{item.theme}}
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>发布人：{{item.issuer}}</text>
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>任务地点：{{item.place}}</text>
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>联系方式：{{item.phone}}</text>
+                            </view>
+                        </view>
+                    </a>
+            </view>
+            <!-- <view wx:if="{{Type==2}}" wx:for="{{Volunteers}}" data-song="{{item}}" class="weui-panel__bd" id="Volunteers" bindtap="detail">
+                <a href="javascript:" class="weui-media-box weui-media-box_appmsg"  style="background-color: rgb(234, 71, 255);">
+                    <view class="weui-media-box__bd">
+                        <view class="weui-media-box__title">
+                                {{item.theme}}
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>发布人：{{item.issuer}}</text>
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>任务地点：{{item.place}}</text>
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>联系方式：{{item.phone}}</text>
+                            </view>
+                        </view>
+                    </a>
+            </view> -->
+            <view wx:if="{{Type==3}}" wx:for="{{Personal}}" data-song="{{item}}" class="weui-panel__bd" id="Personal" bindtap="detail">
+                <a href="javascript:" class="weui-media-box weui-media-box_appmsg"  style="background-color: rgb(255, 181, 71);">
+                    <view class="weui-media-box__bd">
+                        <view class="weui-media-box__title">
+                                {{item.theme}}
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>发布人：{{item.issuer}}</text>
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>任务地点：{{item.place}}</text>
+                            </view>
+                            <view class="weui-media-box__info">
+                                <text>联系方式：{{item.phone}}</text>
+                            </view>
+                        </view>
+                    </a>
+            </view>
+            </scroll-view>
+      </view>
+  </view>
+</view>

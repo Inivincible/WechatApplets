@@ -1,0 +1,40 @@
+<!--pages/work2/yinhang_shiwu/index/index.wxml-->
+<view class="page" style="padding: 14px;bottom: 0;">
+    <view wx:for="{{datas}}" wx:for-index="idx" wx:for-item="item" wx:key="id"> 
+        <view class="page__bd">
+            <view class="weui-form-preview" style="margin-bottom: 14px;">
+                <view class="weui-form-preview__hd">
+                    <view class="weui-form-preview__item" wx:if="{{item.state == '已采集'}}">
+                        <label class="weui-form-preview__label">{{item.month}}月份{{item.name}}</label>
+                        <em class="weui-form-preview__value" style="font-size:1.4em ;color: #06AE56;">{{item.state}}</em>
+                    </view>
+                    <view class="weui-form-preview__item" wx:elif="{{item.state == '未采集'}}">
+                        <label class="weui-form-preview__label">{{item.month}}月份{{item.name}}</label>
+                        <em class="weui-form-preview__value" style="font-size:1.4em ;color: #ed7276;">{{item.state}}</em>
+                    </view>
+                </view>
+                <view class="weui-form-preview__bd">
+                    <view class="weui-form-preview__item form_list">
+                        <label class="weui-form-preview__label">公司名称</label>
+                        <span class="weui-form-preview__value">{{item.company}}</span>
+                    </view>
+                    <view class="weui-form-preview__item form_list">
+                        <label class="weui-form-preview__label">银行信息</label>
+                        <span class="weui-form-preview__value">{{item.bankInfo}}</span>
+                        <span class="weui-form-preview__value">{{item.bankId}}</span>
+                    </view>
+                    <view class="weui-form-preview__item form_list">
+                        <label class="weui-form-preview__label">对账单</label>
+                        <navigator url="../upload/upload">
+                            <span class="weui-form-preview__value" style="color: #ed7276;">未上传</span>
+                        </navigator>
+                    </view>
+                    <view class="weui-form-preview__item form_list">
+                        <label class="weui-form-preview__label">回单</label>
+                        <span class="weui-form-preview__value" style="color: #06AE56;">已上传</span>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

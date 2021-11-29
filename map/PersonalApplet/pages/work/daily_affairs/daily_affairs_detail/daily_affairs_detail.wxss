@@ -1,0 +1,20 @@
+/* pages/daily_affairs_detail/daily_affairs_detail.wxss */
+.weui-form-preview__hd .weui-form-preview__value{
+    font-size: 1em;
+}
+.weui-form-preview{
+    border-radius:0 ;
+}
+image{
+    display: flex;
+    justify-content: center;
+    width: 800rpx;
+
+}
+
+/* 消除页面上下滚动条 */
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}

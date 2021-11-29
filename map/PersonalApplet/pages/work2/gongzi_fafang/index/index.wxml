@@ -1,0 +1,37 @@
+<!--pages/work2/gongzi_fafang/index/index.wxml-->
+<view class="page" style="padding: 14px;bottom: 0;">
+	<view class="page__bd" wx:for="{{datas}}">
+		<navigator class="" target="" url="../shangchuan/shangchuan" hover-class="navigator-hover" open-type="navigate">
+			<view navi class="weui-form-preview" style="margin-bottom: 14px;">
+				<view class="weui-form-preview__hd">
+					<view class="weui-form-preview__item">
+						<label class="weui-form-preview__label">{{ item.name }}</label>
+						<em class="weui-form-preview__value">¥{{ item.money}}</em>
+					</view>
+				</view>
+				<view class="weui-form-preview__bd">
+					<view class="weui-form-preview__item">
+						<label class="weui-form-preview__label">银行</label>
+						<span class="weui-form-preview__value">{{ item.bank}}</span>
+					</view>
+					<view class="weui-form-preview__item">
+						<label class="weui-form-preview__label">工资卡号</label>
+						<span class="weui-form-preview__value">{{ item.bankId}}</span>
+					</view>
+					<view class="weui-form-preview__item">
+						<label class="weui-form-preview__label">发放日期</label>
+						<span class="weui-form-preview__value">{{ item.lSDate}}</span>
+					</view>
+					<view wx:if="{{ item.state == 0}}" class="weui-form-preview__item">
+						<label class="weui-form-preview__label">发放状态</label>
+						<span class="weui-form-preview__value" style="color: #06AE56;">已发放</span>
+					</view>
+					<view wx:else class="weui-form-preview__item">
+						<label class="weui-form-preview__label">发放状态</label>
+						<span class="weui-form-preview__value" style="color: #ed7276;">未发放</span>
+					</view>
+				</view>
+			</view>
+		</navigator>
+	</view>
+</view>

@@ -1,0 +1,16 @@
+.root{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.picture{
+  width: 136rpx;
+  height: 136rpx;
+  border-radius: 50%;
+  border: 4px solid rgba(248, 246, 246, 0.4);
+  margin: 50rpx 0;
+}
+
+h5{
+  margin: 0 0 700rpx 0;
+}

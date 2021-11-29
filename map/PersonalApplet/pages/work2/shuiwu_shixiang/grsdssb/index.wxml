@@ -1,0 +1,24 @@
+<view class="page" style="top:0em;bottom: 0;padding: 0;">
+    <view class="weui-cells weui-cells_form">
+            <view class="weui-cell weui-cell_active">
+                <view class="weui-cell__hd">
+                    <label class="weui-label">工资申报金额</label>
+                </view>
+                <view class="weui-cell__bd">
+                    <input id="js_input" bindinput="moneyInput" type="number" class="weui-input" placeholder="请填写金额" />
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_active">
+                <view class="weui-cell__hd">
+                    <label class="weui-label">个人所得税金额</label>
+                </view>
+                <view class="weui-cell__bd">
+                    <input id="js_input" bindinput="taxInput" type="number" class="weui-input" placeholder="请填写金额" />
+                </view>
+            </view>
+            <button  bindtap="handleClick">提交测试按钮</button>
+    </view>
+    <view class="weui-form__opr-area" style="margin: 20px 0;">
+        <UploadPic></UploadPic>
+    </view>
+</view>

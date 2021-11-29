@@ -1,0 +1,39 @@
+<!--pages/work2/yuangong_yeji/list/list.wxml-->
+<view class="page" style="padding:0; bottom: 0;">
+    <view class="weui-tab">
+        <view class="section">  
+            <picker mode="date" fields="month" value="{{date}}" start="1978-01" end="2030-1" bindchange="bindDateChange">  
+              <view class="picker">  
+                日期: {{date}}  
+              </view>  
+            </picker>  
+          </view>  
+        <view class="weui-tab__panel" wx:key="{{datas}}">
+            <a href="员工业绩详情.html" class=" weui-cell_access">
+                <navigator url="../detail/detail" hover-class="navigator-hover" open-type="navigate">
+                <view class="weui-cell weui-cell_active weui-cell_access">
+
+                    <view class="weui-cell__bd">
+                        <span style="vertical-align: middle;">{{ item.name }}</span>
+                    </view>
+                    <view class="weui-cell__ft" style="color: #ffcc00;">{{ item.state }}</view>
+                </view>
+                <view class="weui-form-preview__bd">
+                    <view class="weui-form-preview__item form_list">
+                        <label class="weui-form-preview__label">业绩达标金额</label>
+                        <span class="weui-form-preview__value">{{ item.performance }}</span>
+                    </view>
+                    <view class="weui-form-preview__item form_list">
+                        <label class="weui-form-preview__label">本月已完成业绩金额</label>
+                        <span class="weui-form-preview__value">{{ item.performanceEnd }}</span>
+                    </view>
+                    <view class="weui-form-preview__item form_list">
+                        <label class="weui-form-preview__label">上月业绩金额</label>
+                        <span class="weui-form-preview__value">{{ item.pPerformance }}</span>
+                    </view>
+                </view>
+            </navigator>
+            </a>
+        </view>
+    </view>
+</view>

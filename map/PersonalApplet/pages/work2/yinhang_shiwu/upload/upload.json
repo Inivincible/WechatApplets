@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "UploadPic":"../../../../component/UploadPic/UploadPic"
+  },
+  "navigationBarTitleText" : "上传银行对账单"
+}

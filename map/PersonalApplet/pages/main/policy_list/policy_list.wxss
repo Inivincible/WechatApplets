@@ -1,0 +1,8 @@
+/* pages/main/policy_list/policy_list.wxss */
+.weui-media-box__info{
+    margin-top: 8px;
+}
+.weui-media-box{
+    margin: 14px;
+    margin-top: 0;
+}

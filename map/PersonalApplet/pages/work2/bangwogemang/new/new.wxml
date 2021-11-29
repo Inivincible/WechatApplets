@@ -1,0 +1,92 @@
+
+<view class="page" style="padding: 0;bottom: 0;">
+    <view class="page__bd" style="height: 100%;">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <view class="weui-navbar__item {{Type=='Daily'?'weui-bar__item_on':''}}" data-value="Daily" bindtap="handleTap">
+                    日常需求
+                </view>
+                <view class="weui-navbar__item {{Type=='Temporary'?'weui-bar__item_on':''}}" data-value="Temporary" bindtap="handleTap">
+                    临时需求
+                </view>
+                <view class="weui-navbar__item {{Type=='Volunteers'?'weui-bar__item_on':''}}" data-value="Volunteers" bindtap="handleTap">
+                    义工需求
+                </view>
+                <view class="weui-navbar__item {{Type=='Personal'?'weui-bar__item_on':''}}" data-value="Personal" bindtap="handleTap">
+                    个人需求
+                </view>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-cells weui-cells_form">
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">需求类型</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <text wx:if="{{Type=='Daily'}}">日常事务</text>
+                            <text wx:if="{{Type=='Temporary'}}">临时事务</text>
+                            <text wx:if="{{Type=='Volunteers'}}">义工事务</text>
+                            <text wx:if="{{Type=='Personal'}}">个人事务</text>
+                        </view>
+                    </view>
+                    <view wx:if="{{Type=='Personal'}}" class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">发布人员</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input id="ReleaseStaff" class="weui-input" placeholder="填写发布人员" bindinput="handleInput"/>
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">任务主题</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input id="Theme" class="weui-input" placeholder="填写任务名称" bindinput="handleInput"/>
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">任务时间</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <picker mode="date" value="{{date}}" start="2020-09-01" end="2040-09-01" bindchange="bindDateChange" bindinput="handleInput">
+                                <view class="weui-input">
+                                    {{date}}
+                                </view>
+                            </picker>
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">任务地点</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input id="Place" class="weui-input" placeholder="填写任务地点" bindinput="handleInput"/>
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">联系电话</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input id="Phone" class="weui-input" placeholder="填写联系电话" type="number" pattern="[0-9]*" bindinput="handleInput"/>
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_active">
+                        <view class="weui-cell__hd">
+                            <label class="weui-label">任务描述</label>
+                        </view>
+                        <view class="weui-cell__bd">
+                            <input id="Commitments" class="weui-input" placeholder="请描述信息" type="text" bindinput="handleInput"/>
+                        </view>
+                    </view>
+                </view>
+                <view class="weui-form__opr-area" style="margin: 20px 0;">
+                    <button class="weui-btn weui-btn_primary" bindtap="buttonClick">发布</button>
+                </view>
+            </view>
+
+        </view>
+    </view>
+</view>

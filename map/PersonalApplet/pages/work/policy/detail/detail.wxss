@@ -1,0 +1,21 @@
+/* pages/work/policy/detail/detail.wxss */
+.weui-form-preview__hd .weui-form-preview__value{
+  font-size: 1em;
+}
+.weui-form-preview{
+  border-radius:0 ;
+}
+.des-box{
+  position: relative;
+}
+.des-label{
+  position: relative;
+  float: left;
+  text-align: justify;
+}
+.des-value{
+  position: relative;
+  float: left;
+  text-align: justify;
+  text-indent: 2em;
+}

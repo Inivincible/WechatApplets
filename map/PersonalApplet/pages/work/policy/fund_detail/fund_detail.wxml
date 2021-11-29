@@ -1,0 +1,33 @@
+<!--pages/work/policy/fund_detail/fund_detail.wxml-->
+<view class="page" style="padding: 0;bottom: 0;">
+    <view class="weui-form-preview">
+        <view class="weui-form-preview__hd">
+            <view class="weui-form-preview__item">
+                <label class="weui-form-preview__label">项目名称</label>
+                <em class="weui-form-preview__value">社保补贴</em>
+            </view>
+        </view>
+        <view class="weui-form-preview__bd">
+            <view class="weui-form-preview__item">
+                <label class="weui-form-preview__label">项目时间段</label>
+                <span class="weui-form-preview__value">2020-7-30至2022-7-30</span>
+            </view>
+            <view class="weui-form-preview__item">
+                <label class="weui-form-preview__label">申办金额</label>
+                <span class="weui-form-preview__value">2000.00元</span>
+            </view>
+            <view class="weui-form-preview__item">
+                <label class="weui-form-preview__label">申办时间</label>
+                <span class="weui-form-preview__value">2020-5-30</span>
+            </view>
+            <view class="weui-form-preview__item">
+                <label class="weui-form-preview__label">第一笔到账金额</label>
+                <span class="weui-form-preview__value">2000.00元</span>
+            </view>
+            <view class="weui-form-preview__item">
+                <label class="weui-form-preview__label">到账日期</label>
+                <span class="weui-form-preview__value">2020-5-30</span>
+            </view>
+        </view>
+    </view>
+</view>

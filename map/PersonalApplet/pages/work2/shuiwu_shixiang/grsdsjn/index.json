@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "UploadPic":"../../../../component/UploadPic/UploadPic"
+  }
+  ,
+    "navigationBarTitleText" : "个人所得税缴纳"
+}

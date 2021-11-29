@@ -1,0 +1,10 @@
+/* pages/work/policy/resource_up/resource_up.wxss */
+.img_url{
+    float: left;
+    width: 192rpx;
+    height: 192rpx;
+}
+
+.img{
+    padding-left: 16rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "UploadPic":"../../../../component/UploadPic/UploadPic"
+  },
+  "navigationBarTitleText" : "工资发放-上传"
+}

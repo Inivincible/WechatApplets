@@ -1,0 +1,92 @@
+<!--pages/login/login.wxml-->
+<view class="page" style="top:0em;bottom: 0em;padding: 0;">
+    <view class="user-box">
+        <view class="weui-panel__bd">
+            <view class=" weui-media-box_appmsg">
+                <view bindtap="loginOut" class="weui-media-box__hd">
+                    <image wx:if="{{!userVia.length>0}}" class="weui-media-box__thumb" src="img/user.png" alt="" />
+                    <image wx:if="{{userVia.length>0}}" class="weui-media-box__thumb" src="{{userVia}}" alt="" />
+                </view>
+                <view class="weui-media-box__bd">
+                    <h4 class="weui-media-box__title">{{userinfo.realName}}</h4>
+                    <p class="weui-media-box__desc">所属公司：<span>{{userinfo.branchInnerCode}}</span>
+                    </p>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="user_list_box">
+        <view class="weui-panel__bd">
+            <view class="weui-media-box weui-media-box_small-appmsg">
+                <view class="weui-cells">
+                    <a class="weui-cell weui-cell_active weui-cell_access weui-cell_example" href="javascript:">
+                        <view class="weui-cell__hd">
+                            <i class="icon iconfont icon-gerenxinxi tangerine"></i>
+                        </view>
+                        <view class="weui-cell__bd weui-cell_primary">
+                            <navigator url="../../user_center_items/person_info/person_info"  open-type="navigate">
+                                <p>个人信息完善</p>
+                            </navigator>
+                        </view>
+                        <span class="weui-cell__ft"></span>
+                    </a>
+                    <a class="weui-cell weui-cell_active weui-cell_access weui-cell_example" href="javascript:">
+                        <view class="weui-cell__hd">
+                            <i class="icon iconfont icon-danwei cyan"></i>
+                        </view>
+                        <view class="weui-cell__bd weui-cell_primary">
+                            <navigator url="../../user_center_items/institutions_info/institutions_info"  open-type="navigate">
+                                <p>单位信息完善</p>
+                            </navigator> 
+                        </view>
+                        <span class="weui-cell__ft"></span>
+                    </a>
+                    <a class="weui-cell weui-cell_active weui-cell_access weui-cell_example" href="javascript:">
+                        <view class="weui-cell__hd">
+                            <i class="icon iconfont icon-caiwushuju red"></i>
+                        </view>
+                        <view class="weui-cell__bd weui-cell_primary">
+                            <navigator url="../../user_center_items/finance_data/finance_data"  open-type="navigate">
+                                <p>单位公开证照资质文件的查阅下载</p>
+                            </navigator>
+                        </view>
+                        <span class="weui-cell__ft"></span>
+                    </a>
+                    <a class="weui-cell weui-cell_active weui-cell_access weui-cell_example" href="javascript:">
+                        <view class="weui-cell__hd">
+                            <i class="icon iconfont icon-fangzu blue"></i>
+                        </view>
+                        <view class="weui-cell__bd weui-cell_primary">
+                            <navigator url="../../user_center_items/office_lease_pay/office_lease_pay"  open-type="navigate">
+                                <p>办公房租赁费支付</p>
+                            </navigator>
+                        </view>
+                        <span class="weui-cell__ft"></span>
+                    </a>
+                    <a class="weui-cell weui-cell_active weui-cell_access weui-cell_example" href="javascript:">
+                        <view class="weui-cell__hd">
+                            <i class="icon iconfont icon-xiugaimima pur"></i>
+                        </view>
+                        <view class="weui-cell__bd weui-cell_primary">
+                            <navigator url="../../user_center_items/change_password/change_password"  open-type="navigate">
+                                <p>修改密码</p>
+                            </navigator>
+                        </view>
+                        <span class="weui-cell__ft"></span>
+                    </a>
+                    <a class="weui-cell weui-cell_active weui-cell_access weui-cell_example" href="javascript:">
+                        <view class="weui-cell__hd">
+                            <i class="icon iconfont icon-baogao blue"></i>
+                        </view>
+                        <view class="weui-cell__bd weui-cell_primary">
+                            <navigator url="../../work2/feedback/feedback"  open-type="navigate">
+                                <p>意见反馈</p>
+                            </navigator>
+                        </view>
+                        <span class="weui-cell__ft"></span>
+                    </a>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

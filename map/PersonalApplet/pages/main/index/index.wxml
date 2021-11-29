@@ -1,0 +1,103 @@
+<!--pages/index/index.wxml-->
+<view class="page" style="top:0em;bottom: 0em;">
+    <scroll-view class="weui-tab__panel"
+            scroll-y
+            refresher-enabled
+            bindrefresherrefresh="handleRefresher"
+            refresher-background="#f7f7f7"
+            refresher-default-style="black"
+            refresher-triggered="{{isTriggered}}">
+    <view class="user_list_box item">
+        <swiper class="index_swiper" indicator-dots="true" indicator-color="rgba(0,0,0,.3)" autoplay="true" current="0"
+                current-item-id="" interval="5000" duration="1000" circular="false" >
+            <swiper-item class="index_swiper_item" wx:for="{{slideshow}}">
+                    <image mode="widthFix" src="{{url}}{{item.pic}}"/>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="weui-flex">
+        <view class="weui-flex__item">
+            <view class="box">
+                <view class="weui-panel__bd">
+                    <view  bindtap="detail" class="weui-media-box weui-media-box_text" wx:for="{{listNotice}}" data-song="{{item}}">
+                        <view class="weui-content1" style="--marqueeWidth--:-12em">
+                            <view class="weui-text">{{text}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-flex">
+        <view class="weui-flex__item ">
+            <view class="weui-grids box">
+                <a href="javascript:" class="weui-grid">
+                    <navigator class="" target="" url="../qidai/qidai" hover-class="navigator-hover"
+                        open-type="navigate">
+                        <view class="weui-grid__icon">
+                            <i class="icon iconfont icon-work pur"></i>
+                        </view>
+                        <p class="weui-grid__label">找工作</p>
+                    </navigator>
+                </a>
+                <a href="javascript:" class="weui-grid">
+                    <navigator class="" target="" url="../../work2/zuoyigong/xuzhi/xuzhi" hover-class="navigator-hover"
+                        open-type="navigate">
+                        <view class="weui-grid__icon">
+                            <i class="icon iconfont icon-xinaixin-fuben yellow"></i>
+                        </view>
+                        <p class="weui-grid__label">做义工</p>
+                    </navigator>
+                </a>
+                <a href="javascript:" class="weui-grid">
+                    <navigator class="" target="" url="../qidai/qidai" hover-class="navigator-hover"
+                        open-type="navigate">
+                        <view class="weui-grid__icon">
+                            <i class="icon iconfont icon-baogao green"></i>
+                        </view>
+                        <p class="weui-grid__label">见习报名</p>
+                    </navigator>
+                </a>
+                <a href="javascript:" class="weui-grid">
+                    <navigator class="" target=""
+                        url="../../work/innovative_communication/innovative_communication_list/innovative_communication_list"
+                        hover-class="navigator-hover" open-type="navigate">
+                        <view class="weui-grid__icon">
+                            <i class="icon iconfont icon-jiaoliu-copy blue"></i>
+                        </view>
+                        <p class="weui-grid__label">活动交流</p>
+                    </navigator>
+                </a>
+                <a href="javascript:" class="weui-grid">
+                    <navigator class="" target="" url="../../work2/linghuaqian/list/list" hover-class="navigator-hover"
+                        open-type="navigate">
+                        <view class="weui-grid__icon">
+                            <i class="icon iconfont icon-qiandai_tianse red"></i>
+                        </view>
+                        <p class="weui-grid__label">赚零花钱</p>
+                    </navigator>
+                </a>
+                <a href="javascript:" class="weui-grid">
+                    <navigator class="" target="" url="../../work2/gongzuo_peixun/list/list" hover-class="navigator-hover"
+                        open-type="navigate">
+                        <view class="weui-grid__icon">
+                            <i class="icon iconfont icon-peixun tangerine"></i>
+                        </view>
+                        <p class="weui-grid__label">在线培训</p>
+                    </navigator>
+                </a>
+                <a href="javascript:" class="weui-grid">
+                    <navigator class="" target="" url="../../work2/bangwogemang/new/new" hover-class="navigator-hover"
+                        open-type="navigate">
+                        <view class="weui-grid__icon">
+                            <i class="icon iconfont icon-icon_cooperation-copy cyan"></i>
+                        </view>
+                        <p class="weui-grid__label">帮我个忙</p>
+                    </navigator>
+                </a>
+               
+            </view>
+        </view>
+    </view>
+    </scroll-view>
+</view>

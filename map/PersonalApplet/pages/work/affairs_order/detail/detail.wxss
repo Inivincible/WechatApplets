@@ -1,0 +1,7 @@
+/* pages/work/affairs_order/detail/detail.wxss */
+.weui-form-preview__hd .weui-form-preview__value{
+    font-size: 1em;
+}
+.weui-form-preview{
+    border-radius:0 ;
+}

@@ -1,0 +1,8 @@
+  <view class="root">
+      <image wx:if="{{!userVia.length>0}}" style="width: 148rpx; height: 142rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx"  class="picture" src="../user_center/img/user.png" alt=""/>
+      <image wx:if="{{userVia.length>0}}" class="picture" src="{{userVia}}" alt="" />
+      <h5>{{user}}</h5>
+    <view class="data">
+          <button bindtap="loginOut" style="width: 368rpx; height: 76rpx; display: block; box-sizing: border-box; left: -6rpx; top: -128rpx; position: relative; background: #e3675f; color: white">退出登录</button>
+    </view>
+  </view>

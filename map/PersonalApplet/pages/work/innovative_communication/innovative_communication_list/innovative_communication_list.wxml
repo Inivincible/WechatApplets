@@ -1,0 +1,54 @@
+
+<view class="page" style="bottom: 0;">
+    <view class="weui-tab">
+        <view class="weui-navbar">
+            <scroll-view class="scroll-header" scroll-x="true">
+                <view class="weui-navbar__item {{Type === '全部活动'?'weui-bar__item_on':''}}" data-value="全部活动" bindtap="handleInput">
+                    全部活动
+                </view>
+                <view wx:for="{{nav}}" class="weui-navbar__item {{Type === item.type ?'weui-bar__item_on':''}}" data-value="{{item.type}}" bindtap="handleInput">{{item.type}}</view>
+            </scroll-view>
+            <!-- <view class="weui-navbar__item">
+                <navigator url="../innovative_communication_new/innovative_communication_new" hover-class="navigator-hover" open-type="navigate">
+                    创品交流
+                </navigator>
+            </view> -->
+        </view>
+        <view type="succes" size="50" class="post">
+            <navigator url="../innovative_communication_new/innovative_communication_new" hover-class="navigator-hover" open-type="navigate">
+                <icon class="iconfont icon-zengjia icochange"></icon>
+            </navigator>
+        </view>
+        <scroll-view class="weui-tab__panel"
+                     scroll-y
+                     refresher-enabled
+                     bindrefresherrefresh="handleRefresher"
+                     refresher-background="#f7f7f7"
+                     refresher-default-style="black"
+                     refresher-triggered="{{isTriggered}}">
+
+        <view class="weui-tab__panel" style="padding: 14px">
+            <view wx:for="{{commodity}}" data-song="{{item}}" class="weui-panel__bd" bindtap="detail">
+                <!-- <navigator url="../innovative_communication_detail/innovative_communication_detail" open-type="navigate"> -->
+                <a href="javascript:" class="weui-media-box weui-media-box_appmsg color{{item.money===0?'1':'2'}}">
+                    <view class="weui-media-box__bd">
+                        <view class="weui-media-box__title" style="padding-right: 22px;">
+                                {{item.title}}
+                            </view>
+                        <view class="weui-media-box__info">
+                            <text>活动状态：{{item.company}}\n</text>
+                            <text>活动时间：{{item.sDate}}~{{item.eDate}}\n</text>
+                            <text>地点：{{item.address}}\n</text>
+                            <text wx:if="{{item.money===0}}">免费</text>
+                            <text wx:else>收费金额：{{item.money}}元</text>
+                        </view>
+                    </view>
+                    <view class="weui-cell weui-cell_active weui-cell_access weui-cell_example">
+                        <span class="weui-cell__ft"></span>
+                    </view>
+                </a>
+            </view>
+        </view>
+    </scroll-view>
+    </view>
+</view>

@@ -1,0 +1,171 @@
+/* pages/pagesA/map/map.wxss */
+.post{
+    position: fixed;
+}
+.text{
+    font-size: 20rpx;
+    color: rgb(26, 128, 196);
+    padding: 0;
+    margin: 0;
+}
+
+/*悬浮窗口*/
+.weui-xuanfu{
+    position: fixed;
+    z-index: 11;
+    top: 88.9%;
+    position: absolute;
+    width: 750rpx;
+    height: 880rpx;
+    background: white;
+    border-radius: 30rpx;
+}
+
+.nav{
+    float: left;
+    width: 100%;
+    height: 60rpx;
+    padding-top: 30rpx;
+}
+.nav-list{
+    float: left;
+    width: 24%;
+    height: 80rpx;
+    text-align: center;
+    line-height: 80rpx;
+}
+.nav-list image{
+    width: 80rpx;
+    height: 80rpx;
+}
+.weui-local{
+    position: relative;
+    top: 130rpx;
+    width: 100%;
+    height: 60rpx;
+    border: 0.1rpx thistle solid;
+}
+.weui-local button{
+    position: relative;
+    width: 140rpx;
+    height: 40rpx;
+    font-size: 18rpx;
+    left: 200rpx;
+    bottom: 127rpx;
+}
+.localimage image{
+    position: relative;
+    bottom: 80rpx;
+    left: 500rpx;
+    width: 30rpx;
+    height: 30rpx;
+    z-index: 2;
+}
+
+.text{
+    padding-top: 150rpx;
+    width: 100%;
+    height: auto;
+}
+
+.text-list{
+    width: 100%;
+    height: 150rpx;
+    padding: 10rpx 10rpx 10rpx 10rpx;
+    margin: 10rpx 10rpx 10rpx 10rpx;
+    border: 0.1rpx grey solid;
+    border-radius: 10rpx;
+}
+.text-list image{
+    width: 200rpx;
+    height: 150rpx;
+    text-align: center;
+    line-height: 200rpx;
+}
+.text-list h5{
+    font-size: 25rpx;
+    font-family: '微软雅黑';
+    color: black;
+    position: relative;
+    left: 10rpx;
+    bottom: 125rpx;
+}
+.text-list text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    font-size: 20rpx;
+    color: grey;
+    position: relative;
+    width: 70%;
+    left: 210rpx;
+    bottom: 100rpx;
+}
+.scroll{
+    width: 100%;
+    height: 600rpx;
+}
+/* 消除页面上下滚动条 */
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+.button{
+    color: rgb(17, 115, 228);
+    background: white;
+    border:none;
+}
+.button::after{
+    border: none;
+    border-radius: 0;
+}
+.commodity_screen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.2;
+    overflow: hidden;
+    z-index: 1000;
+    color: #fff;
+  }
+  /*对话框 */
+  .commodity_attr_box {
+    height: 300rpx;
+    width: 100%;
+    padding-right: 5%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    background: #fff;
+    border-radius: 10px;
+    padding-top: 20rpx;
+  }
+  .image {
+    top: 10rpx;
+    border: 4rpx solid #ffffff;
+    border-radius: 10rpx;
+    background-color: #ffffff;
+    box-shadow: 8rpx 2rpx 2rpx #cccccc;
+    margin: 16rpx;
+    position: relative;
+}
+.text_t{
+    width: 400rpx;
+    position: absolute;
+    top: 40rpx;
+    margin: 16rpx;
+    right: 30rpx;
+    font-size: 0.9em;
+    line-height: 1.6em;
+    letter-spacing: 1.6 rpx;
+    color: #666;
+    text-align: justify;
+}

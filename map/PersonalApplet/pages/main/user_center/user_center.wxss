@@ -1,0 +1,65 @@
+.weui-media-box {
+    border-radius: 0;
+}
+.weui-panel:first-child {
+    margin-bottom: 14px;
+}
+.user-box {
+    background: #ed7276;
+    padding: 14px;
+    padding-top: 20px;
+    padding-bottom: 48px;
+}
+.weui-media-box_appmsg .weui-media-box__hd {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, .4);
+    overflow: hidden;
+}
+.weui-media-box__title {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+.weui-media-box__title,
+.weui-media-box__desc {
+    color: #fff;
+}
+.weui-media-box__desc span {
+    margin-right: 10px;
+}
+.weui-cells {
+    margin: 0;
+}
+.user_list_box {
+    margin: 14px;
+    margin-top: 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+.user_list_box i {
+    font-size: 1.8em;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.weui-cell {
+    padding: 10px;
+}
+/*
+消除button默认样式
+ */
+.button{
+    width: 100%;
+    background: white;
+    border:none;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1;
+    font-size: 32rpx;
+}
+.button::after{
+    border: none;
+    border-radius: 0;
+}

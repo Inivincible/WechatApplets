@@ -1,0 +1,39 @@
+
+<view class="page" style="padding: 0;bottom: 0;">
+    <view class="weui-form-preview">
+        <view class="weui-form-preview__hd">
+            <view class="weui-form-preview__item">
+                <label class="weui-form-preview__label">发布任务主题</label>
+                <em class="weui-form-preview__value" style="font-size: 1em;">{{commodity.title}}</em>
+            </view>
+        </view>
+        <view class="weui-form-preview__bd">
+            <view class="weui-form-preview__item">
+                <label class="weui-form-preview__label">活动时间</label>
+                <span class="weui-form-preview__value">{{commodity.sDate}} {{commodity.sTime}}~{{commodity.eDate}} {{commodity.eTime}}</span>
+            </view>
+            <view class="weui-form-preview__item">
+                <label class="weui-form-preview__label">活动地点</label>
+                <span class="weui-form-preview__value">{{commodity.address}}</span>
+            </view>
+            <view class="weui-form-preview__item">
+                <label class="weui-form-preview__label">发布人</label>
+                <span class="weui-form-preview__value">{{commodity.name}}</span>
+            </view>
+            <view class="weui-form-preview__item">
+                <label class="weui-form-preview__label">收费金额</label>
+                <text wx:if="{{commodity.money===0}}">免费</text>
+                <span wx:else class="weui-form-preview__value">{{commodity.money}}</span>
+            </view>
+            <!-- <view class="weui-form-preview__item">
+                <label class="weui-form-preview__label">扫码报名</label>
+                <image class="weui-form-preview__value" src="../../img/erweima.png" 
+                mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+                </image>
+            </view> -->
+        </view>
+        <view class="weui-form-preview__ft">
+            <a class="weui-form-preview__btn weui-form-preview__btn_primary" bindtap="handleInput">报名</a>
+        </view>
+    </view>
+</view>

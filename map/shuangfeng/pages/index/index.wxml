@@ -1,0 +1,7 @@
+<view style="width:750rpx;height:1334rpx;">
+  <image id="mapImage"
+    style="width:{{imgWidth}}rpx;height:{{imgHeight}}rpx;position: relative;top:0px;bottom:0px;margin-top:{{marginTop}}rpx;margin-left:{{marginLeft}}rpx;"
+    src="{{url}}200.png" mode="aspectFill" catchload="_imgLoadEvent" catchtouchstart='_touchStartEvent'
+    catchtouchmove='_touchMoveEvent' catchtouchend='_touchEndEvent' catchtouchcancel='_touchEndEvent'>
+  </image>
+</view>

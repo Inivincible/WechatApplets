@@ -1,0 +1,126 @@
+{
+    "pages": [
+        "pages/main/login/login",
+        "pages/main/index/index",
+        "pages/main/policy_list/policy_list",
+        "pages/main/new_communication/new_communication",
+        "pages/main/proclamation_list/proclamation_list",
+        "pages/main/user_center/user_center",
+        "pages/main/qidai/qidai",
+        "pages/main/user_signout/user_signout",
+        "pages/main/user_zhuce/user_zhuce"
+    ],
+    "subpackages": [
+        {
+            "root": "pages/user_center_items",
+            "pages": [
+                "person_info/person_info",
+                "institutions_info/institutions_info",
+                "finance_data/finance_data",
+                "change_password/change_password",
+                "office_lease_pay/office_lease_pay"
+            ]
+        },
+        {
+            "root": "pages/work",
+            "pages": [
+                "daily_affairs/daily_affairs_detail/daily_affairs_detail",
+                "daily_affairs/daily_affairs_list/daily_affairs_list",
+                "innovative_communication/innovative_communication_new/innovative_communication_new",
+                "innovative_communication/innovative_communication_list/innovative_communication_list",
+                "innovative_communication/innovative_communication_detail/innovative_communication_detail",
+                "new_communication/detail/detail",
+                "proclamation/detail/detail",
+                "policy/detail/detail",
+                "policy/resource_up/resource_up",
+                "policy/fund_detail/fund_detail",
+                "affairs_order/list/list",
+                "affairs_order/detail/detail",
+                "affairs_order/new/new"
+            ]
+        },
+        {
+            "root": "pages/work2",
+            "pages": [
+                "yuangong_yeji/list/list",
+                "yuangong_yeji/detail/detail",
+                "shebao_jiaofei/list/list",
+                "shebao_jiaofei/detail/detail",
+                "shebao_jiaofei/adjust/adjust",
+                "shuiwu_shixiang/list/list",
+                "shuiwu_shixiang/index/index",
+                "shuiwu_shixiang/grsdssb/index",
+                "shuiwu_shixiang/dypj/index",
+                "shuiwu_shixiang/grsdsjn/index",
+                "shuiwu_shixiang/zzssb/index",
+                "shuiwu_shixiang/zzsjn/index",
+                "shuiwu_shixiang/xzsynsjspz/index",
+                "shuiwu_shixiang/qysdssb/index",
+                "shuiwu_shixiang/qysdsjn/index",
+                "yinhang_shiwu/index/index",
+                "yinhang_shiwu/upload/upload",
+                "gongzi_fafang/index/index",
+                "gongzi_fafang/shangchuan/shangchuan",
+                "caiwu_shuju/index/index",
+                "caiwu_shuju/list/list",
+                "caiwu_shuju/company/company",
+                "zuoyigong/xuzhi/xuzhi",
+                "zuoyigong/list/list",
+                "zuoyigong/detail/detail",
+                "zuoyigong/shangchan/shangchuan",
+                "gongzuo_peixun/list/list",
+                "gongzuo_peixun/detail/detail",
+                "gongzuo_peixun/new/new",
+                "linghuaqian/list/list",
+                "linghuaqian/detail/detail",
+                "bangwogemang/new/new",
+                "upload/uploadfile/uploadfile",
+                "feedback/feedback"
+            ]
+        }
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#eb4450",
+        "navigationBarTitleText": "xx小程序",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#666666",
+        "selectedColor": "#FF0000",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/main/index/index",
+                "text": "首页",
+                "iconPath": "icon/home.png",
+                "selectedIconPath": "icon/home-o.png"
+            },
+           {
+               "pagePath": "pages/main/policy_list/policy_list",
+               "text": "政策",
+               "iconPath": "icon/rili.png",
+               "selectedIconPath": "icon/rili-o.png"
+           },
+            {
+                "pagePath": "pages/main/new_communication/new_communication",
+                "text": "新品交流",
+                "iconPath": "icon/new.png",
+                "selectedIconPath": "icon/new-o.png"
+            },
+            {
+                "pagePath": "pages/main/proclamation_list/proclamation_list",
+                "text": "公告",
+                "iconPath": "icon/ring.png",
+                "selectedIconPath": "icon/ring-o.png"
+            },
+            {
+                "pagePath": "pages/main/user_center/user_center",
+                "text": "个人中心",
+                "iconPath": "icon/yonghu.png",
+                "selectedIconPath": "icon/yonghu-o.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

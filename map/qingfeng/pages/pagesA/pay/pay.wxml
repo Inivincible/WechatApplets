@@ -1,0 +1,50 @@
+<!--pages/pagesA/pay/pay.wxml-->
+<view class="page" style="top:0em;bottom: 0;padding: 0;">
+    <view class="weui-cells weui-cells_form">
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">商品名</label>
+            </view>
+            <view class="weui-cell__bd">
+                <text>{{details.name}}</text>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">价格</label>
+            </view>
+            <view class="weui-cell__bd">
+                <text>{{details.money}}</text>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">姓名</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="payname" type="text" class="weui-input" placeholder="请填写姓名" bindinput="handleInput"/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active">
+            <view class="weui-cell__hd">
+                <label class="weui-label">地址</label>
+            </view>
+            <view class="weui-cell__bd">
+                <input id="di" type="text" class="weui-input" placeholder="请填写收货地址" bindinput="handleInput" />
+            </view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__hd">
+                <label class="weui-label">联系电话</label>
+            </view>
+            <view class="weui-cell__bd wuxi-kjian">
+                <input id="Tel" type="number" pattern="[0-9]*" class="weui-input wuxing" value="{{Tel}}"
+                    placeholder="请填写联系电话" bindinput="handleInput"/>
+                <button class="wuxi-button" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">一键获取</button>
+            </view>
+        </view>
+        <view class="weui-form__opr-area" style="margin:48px 0;">
+            <button class="weui-btn weui-btn_primary weui-btn_disabled"style=" background-color: rgb(53,165,67);" id="showTooltips" bindtap="creatOrder">支付</button>
+        </view>
+    </view>
+</view>

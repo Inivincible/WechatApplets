@@ -1,0 +1,6 @@
+/* pages/work2/shuiwu_shixiang/list/list.wxss */
+.section{
+    background:#CABBC7;
+    margin:20rpx;
+    padding:20rpx
+}

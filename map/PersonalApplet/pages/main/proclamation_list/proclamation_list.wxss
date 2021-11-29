@@ -1,0 +1,13 @@
+/* pages/main/proclamation_list/proclamation_list.wxss */
+.weui-media-box {
+    border-radius: 0;
+}
+.weui-panel:first-child{
+    margin-bottom: 14px;
+}
+.weui-media-box__title{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

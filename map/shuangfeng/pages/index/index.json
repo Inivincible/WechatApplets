@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "zoomImgByView": "/component/zoomImgByView/zoomImgByView"
+  },
+  "navigationBarTitleText":"双凤旅游地图"
+}

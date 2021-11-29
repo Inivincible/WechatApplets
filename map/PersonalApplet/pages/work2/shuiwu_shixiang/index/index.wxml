@@ -1,0 +1,139 @@
+<!--pages/work2/shuiwu_shixiang/index/index.wxml-->
+<view class="page" style="padding: 0;bottom: 0;">
+    <view class="weui-cells">
+        <view class="weui-cell weui-cell_active weui-cell_access weui-cell_select weui-cell_select-after" style="background: #f3f4f9;">
+            <view class="weui-cell__hd">
+                <label class="weui-label">6月税务事项</label>
+            </view>
+            <view class="weui-cell__bd" id="showPicker"></view>
+        </view>
+        <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd">
+                <span style="vertical-align: middle;">工资单</span>
+            </view>
+            <view class="weui-cell__ft" style="color: #ffcc00;">
+                <span class="weui-form-preview__value">未打印</span>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd">
+                <span style="vertical-align: middle;">社保缴费明细单</span>
+            </view>
+            <view class="weui-cell__ft">
+                <span class="weui-form-preview__value" style="color: #06AE56;"> 已打印</span>
+                <span class="weui-form-preview__value">2020/6/1</span>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd">
+                <span style="vertical-align: middle;">公积金缴存明细单</span>
+            </view>
+            <view class="weui-cell__ft">
+                <span class="weui-form-preview__value" style="color: #06AE56;"> 已打印</span>
+                <span class="weui-form-preview__value">2020/6/1</span>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd">
+                <span style="vertical-align: middle;">税盘开票汇总表</span>
+            </view>
+            <view class="weui-cell__ft">
+                <span class="weui-form-preview__value" style="color: #06AE56;"> 已打印</span>
+                <span class="weui-form-preview__value">2020/6/1</span>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd">
+                <span style="vertical-align: middle;">进项票勾选统计表</span>
+            </view>
+            <view class="weui-cell__ft">
+                <span class="weui-form-preview__value" style="color: #06AE56;"> 已打印</span>
+                <span class="weui-form-preview__value">2020/6/1</span>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd">
+                <span style="vertical-align: middle;">税单</span>
+            </view>
+            <view class="weui-cell__ft">
+                <span class="weui-form-preview__value" style="color: #06AE56;"> 已打印</span>
+                <span class="weui-form-preview__value">2020/6/1</span>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd">
+                <span style="vertical-align: middle;">增值税</span>
+            </view>
+            <view class="weui-cell__ft">
+                <span class="weui-form-preview__value" style="color: #06AE56;"> 已报缴</span>
+                <span class="weui-form-preview__value">¥3121.5</span>
+                <span class="weui-form-preview__value">2020/6/1</span>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd">
+                <span style="vertical-align: middle;">个人所得税</span>
+            </view>
+            <view class="weui-cell__ft">
+                <span class="weui-form-preview__value" style="color: #06AE56;"> 已报缴</span>
+                <span class="weui-form-preview__value">¥3121.5</span>
+                <span class="weui-form-preview__value">2020/6/1</span>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd">
+                <span style="vertical-align: middle;">企业所得税</span>
+            </view>
+            <view class="weui-cell__ft">
+                <span class="weui-form-preview__value" style="color: #ffcc00;;"> 最晚申报</span>
+                <span class="weui-form-preview__value">2020/6/15</span>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd">
+                <span style="vertical-align: middle;">会计报表</span>
+            </view>
+            <view class="weui-cell__ft">
+                <span class="weui-form-preview__value" style="color: #06AE56;"> 已申报</span>
+                <span class="weui-form-preview__value">2020/6/5</span>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd">
+                <span style="vertical-align: middle;">汇算清缴</span>
+            </view>
+            <view class="weui-cell__ft">
+                <span class="weui-form-preview__value" style="color: #06AE56;"> 已清卡</span>
+                <span class="weui-form-preview__value">2020/6/1</span>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd">
+                <span style="vertical-align: middle;">会计年报</span>
+            </view>
+            <view class="weui-cell__ft">
+                <span class="weui-form-preview__value" style="color: #06AE56;"> 已申报</span>
+                <span class="weui-form-preview__value">2020/6/1</span>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd">
+                <span style="vertical-align: middle;">工商年报</span>
+            </view>
+            <view class="weui-cell__ft">
+                <span class="weui-form-preview__value" style="color: #06AE56;"> 已申报</span>
+                <span class="weui-form-preview__value">2020/6/1</span>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_active weui-cell_access">
+            <view class="weui-cell__bd">
+                <span style="vertical-align: middle;">汇算清缴</span>
+            </view>
+            <view class="weui-cell__ft">
+                <span class="weui-form-preview__value" style="color: #06AE56;"> 已申报</span>
+                <span class="weui-form-preview__value">2020/6/1</span>
+            </view>
+        </view>
+    </view>
+
+</view>

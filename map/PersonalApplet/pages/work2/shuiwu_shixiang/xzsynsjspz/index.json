@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "UploadPic":"../../../../component/UploadPic/UploadPic"
+  },
+  "navigationBarTitleText" : "下载上月纳税交税凭证"
+}

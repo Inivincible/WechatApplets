@@ -1,0 +1,22 @@
+<!--pages/work/proclamation/detail/detail.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <article class="weui-article">
+            <section>
+                <h2 class="title">{{policyDetails.title}}</h2>
+                <div class="title_explain">
+                    <ul>
+                        <li>时间：{{policyDetails.month}}</li>
+                        <li>发布人：{{policyDetails.name}}</li>
+                    </ul>
+                </div>
+                <section>
+                    <view class="notice_text">
+                        {{policyDetails.content}}
+                    </view>
+                </section>
+            </section>
+        </article>
+    </view>
+</view>
+<!--style="text-align: center;font-weight: bold;"-->

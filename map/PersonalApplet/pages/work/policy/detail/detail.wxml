@@ -1,0 +1,37 @@
+<!--pages/work/policy/detail/detail.wxml-->
+<view class="page" style="padding: 0;bottom: 0;">
+  <view class="weui-form-preview">
+    <view class="weui-form-preview__hd">
+      <view class="weui-form-preview__item">
+        <label class="weui-form-preview__label">政策名称</label>
+        <em class="weui-form-preview__value">{{policyDetail.policyName}}</em>
+      </view>
+    </view>
+    <view class="weui-form-preview__bd">
+      <view class="weui-form-preview__item">
+        <label class="weui-form-preview__label">政策时间段</label>
+        <span class="weui-form-preview__value">{{policyDetail.startDay}}至{{policyDetail.endDay}}</span>
+      </view>
+      <view class="weui-form-preview__item">
+        <label class="weui-form-preview__label">政策地域</label>
+        <span class="weui-form-preview__value">{{policyDetail.policyRegional}}</span>
+      </view>
+      <view class="weui-form-preview__item">
+        <label class="weui-form-preview__label">针对行业</label>
+        <span class="weui-form-preview__value">{{policyDetail.forIndustry}}</span>
+      </view>
+      <view class="weui-form-preview__item des-box">
+        <label class="weui-form-preview__label des-label">政策描述</label>
+      </view>
+      <view class="weui-form-preview__item">
+        <span class="weui-form-preview__value des-value">{{policyDetail.policyDescribe}}</span>
+      </view>
+    </view>
+    <view class="weui-form-preview__ft">
+      <view class="weui-form-preview__btn weui-form-preview__btn_primary" bindtap="detail"  hover-class="navigator-hover" open-type="navigate"
+                 id="{{policyDetail.iD}}">
+         <text>申请政策</text>
+      </view>
+    </view>
+  </view>
+</view>

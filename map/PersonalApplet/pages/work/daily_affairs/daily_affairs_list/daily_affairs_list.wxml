@@ -1,0 +1,134 @@
+<view class="header">
+    <text class="header text">日常事务</text>
+</view>
+<view class="page" style="padding: 14px;bottom: 0;">
+    <view class="weui-tab">
+        <view class="weui-navbar">
+            <view class="weui-navbar__item {{tabnumber==1?'weui-bar__item_on':''}}" bindtap="clicktab1">
+                日常事务
+            </view>
+            <view class="weui-navbar__item {{tabnumber==2?'weui-bar__item_on':''}}" bindtap="clicktab2">
+                发布日常事务
+            </view>
+            <view class="weui-navbar__item {{tabnumber==3?'weui-bar__item_on':''}}" bindtap="clicktab3">
+                承接任务
+            </view>
+        </view>
+        <scroll-view wx:if="{{tabnumber ==1}}" class="weui-tab__panel"
+              scroll-y
+              refresher-enabled
+              bindrefresherrefresh="handleRefresher"
+              refresher-background="#f7f7f7"
+              refresher-default-style="black"
+              refresher-triggered="{{isTriggered}}">
+            <view class="weui-panel__bd">
+                <a wx:for="{{dailyAffairs}}"
+                   class="weui-media-box weui-media-box_appmsg color{{item.issuer==='未完成'?0:(item.taskStatus==='已超期限'?1:(item.taskStatus==='已完成'?2:3))}}"
+                   id="1" data-song="{{item}}" bindtap="detail">
+                    <view class="weui-media-box__bd">
+                        <view class="weui-media-box__title">
+                            <view class="weui-content">
+                                {{item.theme}}
+                            </view>
+                        </view>
+                        <view class="weui-media-box__info">
+                            <text style="line-height: 50rpx;">发布公司：{{item.unit}}\n</text>
+                            <text style="line-height: 50rpx;">最后期限：{{item.time}}\n</text>
+                            <text style="line-height: 50rpx;">{{item.taskStatus}}</text>
+                        </view>
+                    </view>
+                </a>
+            </view>
+        </scroll-view>
+        <scroll-view wx:if="{{tabnumber ==2}}" class="weui-tab__panel"
+                     scroll-y
+                     refresher-enabled
+                     bindrefresherrefresh="handleRefresher"
+                     refresher-background="#f7f7f7"
+                     refresher-default-style="black"
+                     refresher-triggered="{{isTriggered}}">
+            <view class="weui-cells weui-cells_form weui-panel__bd">
+                <view class="weui-cell weui-cell_active">
+                    <view class="weui-cell__hd">
+                        <label class="weui-label">发布任务主题</label>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input id="Theme" class="weui-input" placeholder="填写任务名称" bindinput="handleInput"/>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_active" >
+                    <picker mode="date" fields="day" value="{{date}}" start="1978-01-01" end="2999-01-01" bindchange="bindDateChange">
+                        <view class="picker">
+                            任务时间<span class="dateStyle">{{date}}</span>
+                        </view>
+                    </picker>
+                </view>
+                <view class="weui-cell weui-cell_active">
+                    <view class="weui-cell__hd">
+                        <label class="weui-label">任务地点</label>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input id="Place" class="weui-input" placeholder="填写任务地点" bindinput="handleInput"/>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_active">
+                    <view class="weui-cell__hd">
+                        <label class="weui-label">发布人</label>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input id="Issuer" class="weui-input" placeholder="填写发布人" bindinput="handleInput"/>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_active">
+                    <view class="weui-cell__hd">
+                        <label class="weui-label">联系电话</label>
+                    </view>
+                    <view class="weui-cell__bd">
+                        <input id="Phone" class="weui-input" placeholder="联系电话" type="number" pattern="[0-9]*" bindinput="handleInput"/>
+                    </view>
+                </view>
+                <view class="weui-cell weui-cell_active">
+                    <view class="weui-cell__hd">
+                        <label class="weui-label">任务描述</label>
+                        <view class="weui-cell__bd">
+                            <textarea style="width: 700rpx;" class="weui-textarea" id="Commitments" placeholder="请描述信息"
+                                      rows="4" bindinput="handleInput"></textarea>
+                            <view class="weui-textarea-counter Commitments"><span>{{Commitments.length}}</span>/140</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="weui-form__opr-area" style="margin: 20px 0;">
+                <button class="weui-btn weui-btn_primary" bindtap="ReleaseTask">发布</button>
+            </view>
+        </scroll-view>
+        <scroll-view wx:if="{{tabnumber ==3}}" class="weui-tab__panel"
+                     scroll-y
+                     refresher-enabled
+                     bindrefresherrefresh="handleRefresher"
+                     refresher-background="#f7f7f7"
+                     refresher-default-style="black"
+                     refresher-triggered="{{isTriggered}}">
+            <view class="weui-panel__bd">
+                <a wx:for="{{dailyAffairs1}}"
+                   class="weui-media-box weui-media-box_appmsg color{{item.taskStatus==='未接单'?3:(item.taskStatus==='上月事务未接单'?4:0)}}"
+                   id="2" data-song="{{item}}" bindtap="detail">
+                    <view class="weui-media-box__bd">
+                        <view class="weui-media-box__title">
+                            <view class="weui-content">
+                                {{item.theme}}
+                            </view>
+                        </view>
+                        <view class="weui-media-box__info">
+                            <text style="line-height: 50rpx;">发布公司：{{item.unit}}\n</text>
+                            <text style="line-height: 50rpx;">最后期限：{{item.time}}\n</text>
+                            <text style="line-height: 50rpx;">{{item.receivedBy}}</text>
+                        </view>
+                    </view>
+                </a>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+
+<!--url="../daily_affairs_detail/daily_affairs_detail"-->

@@ -1,0 +1,41 @@
+<!--pages/index/index.wxml-->
+<view>
+<view>
+  <view class="header">
+    <text>庆丰村</text>
+  </view>
+  <view class="body">
+    <text>庆丰村地处双凤镇东部，西接204国道，东靠沙溪镇，南至杨林河，紧靠水上要道盐铁塘，水路交通便捷，规划中的双浮公路贯穿而过。\n</text>
+    <view class="card" >
+        <view bindtap="onItemClick">
+            <image class="image" mode="aspectFill" src="{{url}}12.jpg"/>
+        </view>
+    </view>
+    <text>我村于2004、2006年进行两次村域合并，现村域面积11.2平方公里，耕地9479亩，全村户籍人口4218人，农户906户，下辖57个村民小组。全村党员187人，下设七个党支部，60周岁以上党员127人。目前成立了富华农场专业合作社、塘东劳务合作社、绿维水生植物专业合作社。\n</text>
+    <view class="card" >
+        <view bindtap="onItemClick">
+            <image class="image" mode="aspectFill" src="{{url}}17.jpg"/>
+        </view>
+    </view>
+    <text>2021年两委换届后，现班子成员共10人，党组织班子成员7人，村委会成员7人，其中35周岁以下4人，平均年龄36周岁。近年来，村党委坚持党建引领，创新思路，创建了“七心聚力 青穗先丰”党建品牌，全面提升党建活力。\n</text>
+    <view class="card" >
+        <view bindtap="onItemClick">
+            <image class="image" mode="aspectFill" src="{{url}}6.jpg"/>
+        </view>
+    </view>
+    <text>近年来，紧紧围绕“产业兴旺、生态宜居、乡风文明、治理有效、生活富裕”目标要求，大力发展村级集体经济，扎实推进精神文明建设，不断加大基础设施投入，积极创新社会管理体制。目前已建成12个三星级康居乡村点，实现了农村生活污水处理率达100%，垃圾分类实施全覆盖。我村的社会公德评议团走在了全市创新社会管理体制的前沿，规范化管理，制度化建设，常态化活动，在基层治理中发挥着重要作用。\n</text>
+    <view class="card" >
+        <view bindtap="onItemClick">
+            <image class="image" mode="aspectFill" src="{{url}}8.jpg"/>
+        </view>
+    </view>
+    <text>我村以农业发展为优势产业，农户土地规范有序流转，目前核心区域面积达6500亩，在全市率先完成全程机械化作业，连续多年水稻亩产保持在750公斤左右。富华合作农场，围绕生态农业，效益农业，科技农业，走产供销一体化之路，先后建成2万平方育秧大棚、农机用房3500平方米，有12套烘干设备、大米加工及保鲜库房的富华稻米深加工中心，让庆丰成为“福地福人品福米”的源产地。\n</text>
+    <view class="card" >
+        <view bindtap="onItemClick">
+            <image class="image" mode="aspectFill" src="{{url}}9.jpg"/>
+        </view>
+    </view>
+    <text>我村按照三产融合推进“富裕庆丰”、四治同步打造“和谐庆丰”、党建引领描绘“红色庆丰”，深入实施乡村振兴战略。2019年荣获太仓市第一批“乡村振兴试点示范村”。2020年荣获了江苏省生态文明建设示范村、苏州市人居环境示范村、富华合作农场获评江苏省农民合作社示范社。\n</text>
+  </view>
+</view>
+</view>
